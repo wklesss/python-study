@@ -1,7 +1,7 @@
 print('..........我爱工作室.......')
 temp = input("不妨猜一下我心里想的是那个数字:")
 guess = int(temp)
-if guess == 8 :
+if guess == 9 :
     print("好厉害，一下子就猜对了！？")
     print("猜中也没有奖励的！")
 else:
