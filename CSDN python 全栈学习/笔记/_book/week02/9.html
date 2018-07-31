@@ -1,0 +1,1099 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>17. Scrapy分布式实战 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="10.html" />
+    
+    
+    <link rel="prev" href="8.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../week01/">
+            
+                <a href="../week01/">
+            
+                    
+                    一、Python网络爬虫进阶实战(上)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../week01/1.html">
+            
+                <a href="../week01/1.html">
+            
+                    
+                    1. Scrapy框架介绍与安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../week01/2.html">
+            
+                <a href="../week01/2.html">
+            
+                    
+                    2. Scrapy框架的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../week01/3.html">
+            
+                <a href="../week01/3.html">
+            
+                    
+                    3. Selector选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../week01/4.html">
+            
+                <a href="../week01/4.html">
+            
+                    
+                    4. Spider的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../week01/5.html">
+            
+                <a href="../week01/5.html">
+            
+                    
+                    5. Downloader Middleware的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../week01/6.html">
+            
+                <a href="../week01/6.html">
+            
+                    
+                    6. Spider Middleware的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../week01/7.html">
+            
+                <a href="../week01/7.html">
+            
+                    
+                    7. ItemPipeline的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../week01/8.html">
+            
+                <a href="../week01/8.html">
+            
+                    
+                    8. Scrapy爬虫案例实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../week01/9.html">
+            
+                <a href="../week01/9.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    二、Python网络爬虫进阶实战(中)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    09. Selenium的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    10. Selenium爬取淘宝商品
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    11. MongoDB数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    12. Scrapy框架使用Selenium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    13. 代理的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    14. 使用代理爬取信息实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    15. Redis数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    16. 分布式爬虫原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    17. Scrapy分布式实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../week03/">
+            
+                <a href="../week03/">
+            
+                    
+                    三、Python网络爬虫进阶实战(下)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../week03/1.html">
+            
+                <a href="../week03/1.html">
+            
+                    
+                    18. App的信息爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../week03/2.html">
+            
+                <a href="../week03/2.html">
+            
+                    
+                    19. mitmproxy的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../week03/3.html">
+            
+                <a href="../week03/3.html">
+            
+                    
+                    20. App信息抓取实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../week03/4.html">
+            
+                <a href="../week03/4.html">
+            
+                    
+                    21. 从API爬取天气预报数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../week03/5.html">
+            
+                <a href="../week03/5.html">
+            
+                    
+                    22. 滑动验证码的识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../week03/6.html">
+            
+                <a href="../week03/6.html">
+            
+                    
+                    23. 爬虫项目需求分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../week03/7.html">
+            
+                <a href="../week03/7.html">
+            
+                    
+                    24. 爬虫项目架构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../week03/8.html">
+            
+                <a href="../week03/8.html">
+            
+                    
+                    25. 爬虫项目的代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../week03/9.html">
+            
+                <a href="../week03/9.html">
+            
+                    
+                    26. 使用web展示爬取信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../week03/10.html">
+            
+                <a href="../week03/10.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >17. Scrapy分布式实战</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="17-scrapy&#x5206;&#x5E03;&#x5F0F;&#x722C;&#x866B;">17 Scrapy&#x5206;&#x5E03;&#x5F0F;&#x722C;&#x866B;</h1>
+<ul>
+<li>Scrapy-Redis&#x5219;&#x662F;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;Redis&#x7684;Scrapy&#x5206;&#x5E03;&#x5F0F;&#x7EC4;&#x4EF6;&#x3002;&#x5B83;&#x5229;&#x7528;Redis&#x5BF9;&#x7528;&#x4E8E;&#x722C;&#x53D6;&#x7684;&#x8BF7;&#x6C42;(Requests)&#x8FDB;&#x884C;&#x5B58;&#x50A8;&#x548C;&#x8C03;&#x5EA6;(Schedule)&#xFF0C;&#x5E76;&#x5BF9;&#x722C;&#x53D6;&#x4EA7;&#x751F;&#x7684;&#x9879;&#x76EE;(items)&#x5B58;&#x50A8;&#x4EE5;&#x4F9B;&#x540E;&#x7EED;&#x5904;&#x7406;&#x4F7F;&#x7528;&#x3002;</li>
+<li>scrapy-redi&#x91CD;&#x5199;&#x4E86;scrapy&#x4E00;&#x4E9B;&#x6BD4;&#x8F83;&#x5173;&#x952E;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x5C06;scrapy&#x53D8;&#x6210;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x5728;&#x591A;&#x4E2A;&#x4E3B;&#x673A;&#x4E0A;&#x540C;&#x65F6;&#x8FD0;&#x884C;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x722C;&#x866B;&#x3002;</li>
+</ul>
+<p><img src="../images/week02/scrapy-redis.png" alt=""></p>
+<h3 id="171-&#x51C6;&#x5907;">17.1 &#x51C6;&#x5907;</h3>
+<ul>
+<li>&#x65E2;&#x7136;&#x8FD9;&#x4E48;&#x597D;&#x80FD;&#x5B9E;&#x73B0;&#x5206;&#x5E03;&#x5F0F;&#x722C;&#x53D6;&#xFF0C;&#x90A3;&#x90FD;&#x9700;&#x8981;&#x51C6;&#x5907;&#x4EC0;&#x4E48;&#x5462;&#xFF1F; </li>
+<li>&#x9700;&#x8981;&#x51C6;&#x5907;&#x7684;&#x4E1C;&#x897F;&#x6BD4;&#x8F83;&#x591A;&#xFF0C;&#x90FD;&#x6709;&#xFF1A; <ul>
+<li>scrapy </li>
+<li>scrapy-redis </li>
+<li>redis </li>
+<li>mysql </li>
+<li>python&#x7684;mysqldb&#x6A21;&#x5757; </li>
+<li>python&#x7684;redis&#x6A21;&#x5757; </li>
+</ul>
+</li>
+<li>&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x6709;mysql&#x5462;&#xFF1F;&#x662F;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x6253;&#x7B97;&#x628A;&#x6536;&#x96C6;&#x6765;&#x7684;&#x6570;&#x636E;&#x5B58;&#x653E;&#x5230;mysql&#x4E2D;</li>
+<li><p>&#x5B89;&#x88C5;&#xFF1A;</p>
+<pre><code>$ pip install scrapy-redis    
+$ pip install redis
+</code></pre></li>
+<li><p>Scrapy-Redis&#x7684;&#x5B98;&#x65B9;&#x7F51;&#x5740;&#xFF1A;<a href="https://github.com/rmax/scrapy-redis" target="_blank">https://github.com/rmax/scrapy-redis</a></p>
+</li>
+</ul>
+<h3 id="172--scrapy-redis&#x5404;&#x4E2A;&#x7EC4;&#x4EF6;&#x4ECB;&#x7ECD;">17.2  Scrapy-redis&#x5404;&#x4E2A;&#x7EC4;&#x4EF6;&#x4ECB;&#x7ECD;</h3>
+<h4 id="&#x2460;-connectionpy">&#x2460; connection.py</h4>
+<ul>
+<li>&#x8D1F;&#x8D23;&#x6839;&#x636E;setting&#x4E2D;&#x914D;&#x7F6E;&#x5B9E;&#x4F8B;&#x5316;redis&#x8FDE;&#x63A5;&#x3002;&#x88AB;dupefilter&#x548C;scheduler&#x8C03;&#x7528;&#xFF0C;&#x603B;&#x4E4B;&#x6D89;&#x53CA;&#x5230;redis&#x5B58;&#x53D6;&#x7684;&#x90FD;&#x8981;&#x4F7F;&#x7528;&#x5230;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#x3002;</li>
+</ul>
+<h4 id="&#x2461;-dupefilterpy">&#x2461; dupefilter.py</h4>
+<ul>
+<li>&#x8D1F;&#x8D23;&#x6267;&#x884C;requst&#x7684;&#x53BB;&#x91CD;&#xFF0C;&#x5B9E;&#x73B0;&#x7684;&#x5F88;&#x6709;&#x6280;&#x5DE7;&#x6027;&#xFF0C;&#x4F7F;&#x7528;redis&#x7684;set&#x6570;&#x636E;&#x7ED3;&#x6784;&#x3002;</li>
+<li>&#x4F46;&#x662F;&#x6CE8;&#x610F;scheduler&#x5E76;&#x4E0D;&#x4F7F;&#x7528;&#x5176;&#x4E2D;&#x7528;&#x4E8E;&#x5728;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#x4E2D;&#x5B9E;&#x73B0;&#x7684;dupefilter&#x952E;&#x505A;request&#x7684;&#x8C03;&#x5EA6;&#xFF0C;&#x800C;&#x662F;&#x4F7F;&#x7528;queue.py&#x6A21;&#x5757;&#x4E2D;&#x5B9E;&#x73B0;&#x7684;queue&#x3002;</li>
+<li>&#x5F53;request&#x4E0D;&#x91CD;&#x590D;&#x65F6;&#xFF0C;&#x5C06;&#x5176;&#x5B58;&#x5165;&#x5230;queue&#x4E2D;&#xFF0C;&#x8C03;&#x5EA6;&#x65F6;&#x5C06;&#x5176;&#x5F39;&#x51FA;&#x3002;</li>
+</ul>
+<h4 id="&#x2462;-queuepy">&#x2462; queue.py</h4>
+<ul>
+<li><p>&#x5176;&#x4F5C;&#x7528;&#x5982;II&#x6240;&#x8FF0;&#xFF0C;&#x4F46;&#x662F;&#x8FD9;&#x91CC;&#x5B9E;&#x73B0;&#x4E86;&#x4E09;&#x79CD;&#x65B9;&#x5F0F;&#x7684;queue&#xFF1A;</p>
+</li>
+<li><p>FIFO&#x7684;SpiderQueue&#xFF0C;SpiderPriorityQueue&#xFF0C;&#x4EE5;&#x53CA;LIFI&#x7684;SpiderStack&#x3002;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684;&#x662F;&#x7B2C;&#x4E8C;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E5F;&#x5C31;&#x662F;&#x51FA;&#x73B0;&#x4E4B;&#x524D;&#x6587;&#x7AE0;&#x4E2D;&#x6240;&#x5206;&#x6790;&#x60C5;&#x51B5;&#x7684;&#x539F;&#x56E0;&#xFF08;&#x94FE;&#x63A5;&#xFF09;&#x3002;</p>
+</li>
+</ul>
+<h4 id="&#x2463;-pipelinespy">&#x2463; pipelines.py</h4>
+<ul>
+<li>&#x8FD9;&#x662F;&#x662F;&#x7528;&#x6765;&#x5B9E;&#x73B0;&#x5206;&#x5E03;&#x5F0F;&#x5904;&#x7406;&#x7684;&#x4F5C;&#x7528;&#x3002;&#x5B83;&#x5C06;Item&#x5B58;&#x50A8;&#x5728;redis&#x4E2D;&#x4EE5;&#x5B9E;&#x73B0;&#x5206;&#x5E03;&#x5F0F;&#x5904;&#x7406;&#x3002;</li>
+<li>&#x53E6;&#x5916;&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#xFF0C;&#x540C;&#x6837;&#x662F;&#x7F16;&#x5199;pipelines&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x7684;&#x7F16;&#x7801;&#x5B9E;&#x73B0;&#x4E0D;&#x540C;&#x4E8E;&#x6587;&#x7AE0;&#xFF08;&#x94FE;&#x63A5;&#xFF1A;&#xFF09;&#x4E2D;&#x6240;&#x5206;&#x6790;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x7531;&#x4E8E;&#x5728;&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x8BFB;&#x53D6;&#x914D;&#x7F6E;&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x7528;&#x5230;&#x4E86;from_crawler()&#x51FD;&#x6570;&#x3002;</li>
+</ul>
+<h4 id="&#x2464;-schedulerpy">&#x2464; scheduler.py</h4>
+<ul>
+<li><p>&#x6B64;&#x6269;&#x5C55;&#x662F;&#x5BF9;scrapy&#x4E2D;&#x81EA;&#x5E26;&#x7684;scheduler&#x7684;&#x66FF;&#x4EE3;&#xFF08;&#x5728;settings&#x7684;SCHEDULER&#x53D8;&#x91CF;&#x4E2D;&#x6307;&#x51FA;&#xFF09;&#xFF0C;&#x6B63;&#x662F;&#x5229;&#x7528;&#x6B64;&#x6269;&#x5C55;&#x5B9E;&#x73B0;crawler&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x8C03;&#x5EA6;&#x3002;&#x5176;&#x5229;&#x7528;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x6765;&#x81EA;&#x4E8E;queue&#x4E2D;&#x5B9E;&#x73B0;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x3002;</p>
+</li>
+<li><p>scrapy-redis&#x6240;&#x5B9E;&#x73B0;&#x7684;&#x4E24;&#x79CD;&#x5206;&#x5E03;&#x5F0F;&#xFF1A;&#x722C;&#x866B;&#x5206;&#x5E03;&#x5F0F;&#x4EE5;&#x53CA;item&#x5904;&#x7406;&#x5206;&#x5E03;&#x5F0F;&#x5C31;&#x662F;&#x7531;&#x6A21;&#x5757;scheduler&#x548C;&#x6A21;&#x5757;pipelines&#x5B9E;&#x73B0;&#x3002;&#x4E0A;&#x8FF0;&#x5176;&#x5B83;&#x6A21;&#x5757;&#x4F5C;&#x4E3A;&#x4E3A;&#x4E8C;&#x8005;&#x8F85;&#x52A9;&#x7684;&#x529F;&#x80FD;&#x6A21;&#x5757;&#x3002;</p>
+</li>
+</ul>
+<h4 id="&#x2465;-spiderpy">&#x2465; spider.py</h4>
+<ul>
+<li>&#x8BBE;&#x8BA1;&#x7684;&#x8FD9;&#x4E2A;spider&#x4ECE;redis&#x4E2D;&#x8BFB;&#x53D6;&#x8981;&#x722C;&#x7684;url,&#x7136;&#x540E;&#x6267;&#x884C;&#x722C;&#x53D6;&#xFF0C;&#x82E5;&#x722C;&#x53D6;&#x8FC7;&#x7A0B;&#x4E2D;&#x8FD4;&#x56DE;&#x66F4;&#x591A;&#x7684;url&#xFF0C;&#x90A3;&#x4E48;&#x7EE7;&#x7EED;&#x8FDB;&#x884C;&#x76F4;&#x81F3;&#x6240;&#x6709;&#x7684;request&#x5B8C;&#x6210;&#x3002;&#x4E4B;&#x540E;&#x7EE7;&#x7EED;&#x4ECE;redis&#x4E2D;&#x8BFB;&#x53D6;url&#xFF0C;&#x5FAA;&#x73AF;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x3002;</li>
+</ul>
+<h3 id="173-&#x5177;&#x4F53;&#x4F7F;&#x7528;&#x5BF9;scrapy&#x6539;&#x9020;&#xFF1A;">17.3 &#x5177;&#x4F53;&#x4F7F;&#x7528;(&#x5BF9;Scrapy&#x6539;&#x9020;)&#xFF1A;</h3>
+<h4 id="1&#x9996;&#x5148;&#x5728;settingspy&#x4E2D;&#x914D;&#x7F6E;redis&#xFF08;&#x5728;scrapy-redis-&#x81EA;&#x5E26;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#x5DF2;&#x7ECF;&#x914D;&#x7F6E;&#x597D;&#xFF09;">1.&#x9996;&#x5148;&#x5728;settings.py&#x4E2D;&#x914D;&#x7F6E;redis&#xFF08;&#x5728;scrapy-redis &#x81EA;&#x5E26;&#x7684;&#x4F8B;&#x5B50;&#x4E2D;&#x5DF2;&#x7ECF;&#x914D;&#x7F6E;&#x597D;&#xFF09;</h4>
+<pre><code class="lang-python">   <span class="hljs-comment"># &#x6307;&#x5B9A;&#x4F7F;&#x7528;scrapy-redis&#x7684;&#x53BB;&#x91CD;</span>
+   DUPEFILTER_CLASS = <span class="hljs-string">&apos;scrapy_redis.dupefilters.RFPDupeFilter&apos;</span>
+
+   <span class="hljs-comment"># &#x6307;&#x5B9A;&#x4F7F;&#x7528;scrapy-redis&#x7684;&#x8C03;&#x5EA6;&#x5668;</span>
+   SCHEDULER = <span class="hljs-string">&quot;scrapy_redis.scheduler.Scheduler&quot;</span>
+
+   <span class="hljs-comment"># &#x5728;redis&#x4E2D;&#x4FDD;&#x6301;scrapy-redis&#x7528;&#x5230;&#x7684;&#x5404;&#x4E2A;&#x961F;&#x5217;&#xFF0C;&#x4ECE;&#x800C;&#x5141;&#x8BB8;&#x6682;&#x505C;&#x548C;&#x6682;&#x505C;&#x540E;&#x6062;&#x590D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E0D;&#x6E05;&#x7406;redis queues</span>
+   SCHEDULER_PERSIST = <span class="hljs-keyword">True</span>
+
+   <span class="hljs-comment"># &#x6307;&#x5B9A;&#x6392;&#x5E8F;&#x722C;&#x53D6;&#x5730;&#x5740;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x961F;&#x5217;&#xFF0C;</span>
+   <span class="hljs-comment"># &#x9ED8;&#x8BA4;&#x7684; &#x6309;&#x4F18;&#x5148;&#x7EA7;&#x6392;&#x5E8F;(Scrapy&#x9ED8;&#x8BA4;)&#xFF0C;&#x7531;sorted set&#x5B9E;&#x73B0;&#x7684;&#x4E00;&#x79CD;&#x975E;FIFO&#x3001;LIFO&#x65B9;&#x5F0F;&#x3002;</span>
+   SCHEDULER_QUEUE_CLASS = <span class="hljs-string">&apos;scrapy_redis.queue.SpiderPriorityQueue&apos;</span>
+
+   REDIS_URL = <span class="hljs-keyword">None</span> <span class="hljs-comment"># &#x4E00;&#x822C;&#x60C5;&#x51B5;&#x53EF;&#x4EE5;&#x7701;&#x53BB;</span>
+   REDIS_HOST = <span class="hljs-string">&apos;127.0.0.1&apos;</span> <span class="hljs-comment"># &#x4E5F;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x60C5;&#x51B5;&#x6539;&#x6210; localhost</span>
+   REDIS_PORT = <span class="hljs-number">6379</span>
+</code></pre>
+<h4 id="2itempy&#x7684;&#x6539;&#x9020;">2.item.py&#x7684;&#x6539;&#x9020;</h4>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> scrapy.item <span class="hljs-keyword">import</span> Item, Field
+<span class="hljs-keyword">from</span> scrapy.loader <span class="hljs-keyword">import</span> ItemLoader
+<span class="hljs-keyword">from</span> scrapy.loader.processors <span class="hljs-keyword">import</span> MapCompose, TakeFirst, Join
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExampleItem</span><span class="hljs-params">(Item)</span>:</span>
+    name = Field()
+    description = Field()
+    link = Field()
+    crawled = Field()
+    spider = Field()
+    url = Field()
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ExampleLoader</span><span class="hljs-params">(ItemLoader)</span>:</span>
+    default_item_class = ExampleItem
+    default_input_processor = MapCompose(<span class="hljs-keyword">lambda</span> s: s.strip())
+    default_output_processor = TakeFirst()
+    description_out = Join()
+</code></pre>
+<h4 id="3spider&#x7684;&#x6539;&#x9020;&#x3002;starturls&#x53D8;&#x6210;&#x4E86;rediskey&#x4ECE;redis&#x4E2D;&#x83B7;&#x5F97;request&#xFF0C;&#x7EE7;&#x627F;&#x7684;scrapyspider&#x53D8;&#x6210;redisspider&#x3002;">3.spider&#x7684;&#x6539;&#x9020;&#x3002;star_turls&#x53D8;&#x6210;&#x4E86;redis_key&#x4ECE;redis&#x4E2D;&#x83B7;&#x5F97;request&#xFF0C;&#x7EE7;&#x627F;&#x7684;scrapy.spider&#x53D8;&#x6210;RedisSpider&#x3002;</h4>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> scrapy_redis.spiders <span class="hljs-keyword">import</span> RedisSpider
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MySpider</span><span class="hljs-params">(RedisSpider)</span>:</span>
+    <span class="hljs-string">&quot;&quot;&quot;Spider that reads urls from redis queue (myspider:start_urls).&quot;&quot;&quot;</span>
+    name = <span class="hljs-string">&apos;myspider_redis&apos;</span>
+    redis_key = <span class="hljs-string">&apos;myspider:start_urls&apos;</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, *args, **kwargs)</span>:</span>
+        <span class="hljs-comment"># Dynamically define the allowed domains list.</span>
+        domain = kwargs.pop(<span class="hljs-string">&apos;domain&apos;</span>, <span class="hljs-string">&apos;&apos;</span>)
+        self.allowed_domains = filter(<span class="hljs-keyword">None</span>, domain.split(<span class="hljs-string">&apos;,&apos;</span>))
+        super(MySpider, self).__init__(*args, **kwargs)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">parse</span><span class="hljs-params">(self, response)</span>:</span>
+        <span class="hljs-keyword">return</span> {
+            <span class="hljs-string">&apos;name&apos;</span>: response.css(<span class="hljs-string">&apos;title::text&apos;</span>).extract_first(),
+            <span class="hljs-string">&apos;url&apos;</span>: response.url,
+        }
+</code></pre>
+<h4 id="&#x542F;&#x52A8;&#x722C;&#x866B;&#xFF1A;">&#x542F;&#x52A8;&#x722C;&#x866B;&#xFF1A;</h4>
+<pre><code>$ scrapy runspider my.py
+</code></pre><p>&#x53EF;&#x4EE5;&#x8F93;&#x5165;&#x591A;&#x4E2A;&#x6765;&#x89C2;&#x5BDF;&#x591A;&#x8FDB;&#x7A0B;&#x7684;&#x6548;&#x679C;&#x3002;&#x3002;&#x6253;&#x5F00;&#x4E86;&#x722C;&#x866B;&#x4E4B;&#x540E;&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#x722C;&#x866B;&#x5904;&#x4E8E;&#x7B49;&#x5F85;&#x722C;&#x53D6;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x662F;&#x56E0;&#x4E3A;list&#x6B64;&#x65F6;&#x4E3A;&#x7A7A;&#x3002;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x5728;redis&#x63A7;&#x5236;&#x53F0;&#x4E2D;&#x6DFB;&#x52A0;&#x542F;&#x52A8;&#x5730;&#x5740;,&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x6109;&#x5FEB;&#x7684;&#x770B;&#x5230;&#x6240;&#x6709;&#x7684;&#x722C;&#x866B;&#x90FD;&#x52A8;&#x8D77;&#x6765;&#x5566;&#x3002;</p>
+<pre><code>lpush mycrawler:start_urls http://www.***.com
+</code></pre><h4 id="&#x66F4;&#x591A;&#x5173;&#x4E8E;&#x914D;&#x7F6E;scrapy&#x6846;&#x67B6;&#x4E2D;&#x914D;&#x7F6E;&#xFF1A;settingspy">&#x66F4;&#x591A;&#x5173;&#x4E8E;&#x914D;&#x7F6E;Scrapy&#x6846;&#x67B6;&#x4E2D;&#x914D;&#x7F6E;&#xFF1A;settings.py</h4>
+<pre><code># &#x6307;&#x5B9A;&#x4F7F;&#x7528;scrapy-redis&#x7684;&#x8C03;&#x5EA6;&#x5668;
+SCHEDULER = &quot;scrapy_redis.scheduler.Scheduler&quot;
+
+# &#x6307;&#x5B9A;&#x4F7F;&#x7528;scrapy-redis&#x7684;&#x53BB;&#x91CD;
+DUPEFILTER_CLASS = &apos;scrapy_redis.dupefilters.RFPDupeFilter&apos;
+
+# &#x6307;&#x5B9A;&#x6392;&#x5E8F;&#x722C;&#x53D6;&#x5730;&#x5740;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x961F;&#x5217;&#xFF0C;
+# &#x9ED8;&#x8BA4;&#x7684; &#x6309;&#x4F18;&#x5148;&#x7EA7;&#x6392;&#x5E8F;(Scrapy&#x9ED8;&#x8BA4;)&#xFF0C;&#x7531;sorted set&#x5B9E;&#x73B0;&#x7684;&#x4E00;&#x79CD;&#x975E;FIFO&#x3001;LIFO&#x65B9;&#x5F0F;&#x3002;
+SCHEDULER_QUEUE_CLASS = &apos;scrapy_redis.queue.SpiderPriorityQueue&apos;
+# &#x53EF;&#x9009;&#x7684; &#x6309;&#x5148;&#x8FDB;&#x5148;&#x51FA;&#x6392;&#x5E8F;&#xFF08;FIFO&#xFF09;
+# SCHEDULER_QUEUE_CLASS = &apos;scrapy_redis.queue.SpiderQueue&apos;
+# &#x53EF;&#x9009;&#x7684; &#x6309;&#x540E;&#x8FDB;&#x5148;&#x51FA;&#x6392;&#x5E8F;&#xFF08;LIFO&#xFF09;
+# SCHEDULER_QUEUE_CLASS = &apos;scrapy_redis.queue.SpiderStack&apos;
+
+# &#x5728;redis&#x4E2D;&#x4FDD;&#x6301;scrapy-redis&#x7528;&#x5230;&#x7684;&#x5404;&#x4E2A;&#x961F;&#x5217;&#xFF0C;&#x4ECE;&#x800C;&#x5141;&#x8BB8;&#x6682;&#x505C;&#x548C;&#x6682;&#x505C;&#x540E;&#x6062;&#x590D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E0D;&#x6E05;&#x7406;redis queues
+SCHEDULER_PERSIST = True
+
+# &#x53EA;&#x5728;&#x4F7F;&#x7528;SpiderQueue&#x6216;&#x8005;SpiderStack&#x662F;&#x6709;&#x6548;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x6307;&#x5B9A;&#x722C;&#x866B;&#x5173;&#x95ED;&#x7684;&#x6700;&#x5927;&#x95F4;&#x9694;&#x65F6;&#x95F4;
+# SCHEDULER_IDLE_BEFORE_CLOSE = 10
+
+# &#x901A;&#x8FC7;&#x914D;&#x7F6E;RedisPipeline&#x5C06;item&#x5199;&#x5165;key&#x4E3A; spider.name : items &#x7684;redis&#x7684;list&#x4E2D;&#xFF0C;&#x4F9B;&#x540E;&#x9762;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x5904;&#x7406;item
+# &#x8FD9;&#x4E2A;&#x5DF2;&#x7ECF;&#x7531; scrapy-redis &#x5B9E;&#x73B0;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x5199;&#x4EE3;&#x7801;
+ITEM_PIPELINES = {
+    &apos;example.pipelines.ExamplePipeline&apos;: 300,
+    &apos;scrapy_redis.pipelines.RedisPipeline&apos;: 400
+}
+
+# &#x6307;&#x5B9A;redis&#x6570;&#x636E;&#x5E93;&#x7684;&#x8FDE;&#x63A5;&#x53C2;&#x6570;
+# REDIS_PASS&#x662F;&#x6211;&#x81EA;&#x5DF1;&#x52A0;&#x4E0A;&#x7684;redis&#x8FDE;&#x63A5;&#x5BC6;&#x7801;&#xFF08;&#x9ED8;&#x8BA4;&#x4E0D;&#x505A;&#xFF09;
+REDIS_HOST = &apos;127.0.0.1&apos;
+REDIS_PORT = 6379
+#REDIS_PASS = &apos;redisP@ssw0rd&apos;
+
+# LOG&#x7B49;&#x7EA7;
+LOG_LEVEL = &apos;DEBUG&apos;
+
+#&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;,RFPDupeFilter&#x53EA;&#x8BB0;&#x5F55;&#x7B2C;&#x4E00;&#x4E2A;&#x91CD;&#x590D;&#x8BF7;&#x6C42;&#x3002;&#x5C06;DUPEFILTER_DEBUG&#x8BBE;&#x7F6E;&#x4E3A;True&#x4F1A;&#x8BB0;&#x5F55;&#x6240;&#x6709;&#x91CD;&#x590D;&#x7684;&#x8BF7;&#x6C42;&#x3002;
+DUPEFILTER_DEBUG =True
+
+# &#x8986;&#x76D6;&#x9ED8;&#x8BA4;&#x8BF7;&#x6C42;&#x5934;&#xFF0C;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x7F16;&#x5199;Downloader Middlewares&#x8BBE;&#x7F6E;&#x4EE3;&#x7406;&#x548C;UserAgent
+DEFAULT_REQUEST_HEADERS = {
+    &apos;Accept&apos;: &apos;text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8&apos;,
+    &apos;Accept-Language&apos;: &apos;zh-CN,zh;q=0.8&apos;,
+    &apos;Connection&apos;: &apos;keep-alive&apos;,
+    &apos;Accept-Encoding&apos;: &apos;gzip, deflate, sdch&apos;
+}
+</code></pre><h3 id="174-&#x5B9E;&#x6218;&#x6848;&#x4F8B;&#xFF1A;">17.4 &#x5B9E;&#x6218;&#x6848;&#x4F8B;&#xFF1A;</h3>
+<ul>
+<li>&#x6848;&#x4F8B;&#xFF1A;&#x5B9E;&#x73B0;&#x4E3B;&#x4ECE;&#x5206;&#x5E03;&#x5F0F;&#x722C;&#x866B;&#xFF0C;&#x722C;&#x53D6;5i5j&#x7684;&#x697C;&#x76D8;&#x4FE1;&#x606F;</li>
+<li>URL&#x5730;&#x5740;&#xFF1A;<a href="https://fang.5i5j.com/bj/loupan/" target="_blank">https://fang.5i5j.com/bj/loupan/</a></li>
+<li>&#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#xFF1A;<ul>
+<li>&#x5F00;&#x542F;redis&#x6570;&#x636E;&#x5E93;&#x670D;&#x52A1;</li>
+<li>&#x5C06;&#x7B2C;&#x4E8C;&#x8282;<code>Scrapy&#x6846;&#x67B6;&#x7684;&#x4F7F;&#x7528;</code>&#x4E2D;&#x7684;&#x6848;&#x4F8B;demo&#x590D;&#x5236;&#x8FC7;&#x6765;&#x4E24;&#x4EFD;&#xFF1A;master(&#x4E3B;)&#x3001;slave(&#x4ECE;)</li>
+</ul>
+</li>
+</ul>
+<p><img src="../images/week02/scrapy-redis2.png" alt=""></p>
+<h4 id="&#x2460;-&#x7F16;&#x5199;slave&#x4ECE;&#x9879;&#x76EE;&#x4EE3;&#x7801;&#xFF1A;">&#x2460; &#x7F16;&#x5199;slave(&#x4ECE;)&#x9879;&#x76EE;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<ul>
+<li>&#x67E5;&#x770B;items.py &#x4FDD;&#x6301;&#x4E0D;&#x53D8;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> scrapy
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FangItem</span><span class="hljs-params">(scrapy.Item)</span>:</span>
+    <span class="hljs-comment"># define the fields for your item here like:</span>
+    title = scrapy.Field()
+    address = scrapy.Field()
+    time = scrapy.Field()
+    clicks = scrapy.Field()
+    price = scrapy.Field()
+</code></pre>
+<ul>
+<li>&#x7F16;&#x8F91;&#x722C;&#x866B;&#x6587;&#x4EF6;&#xFF1A;fang.py</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># -*- coding: utf-8 -*-</span>
+<span class="hljs-keyword">import</span> scrapy
+<span class="hljs-keyword">from</span> demo.items <span class="hljs-keyword">import</span> FangItem
+<span class="hljs-keyword">from</span> scrapy_redis.spiders <span class="hljs-keyword">import</span> RedisSpider
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FangSpider</span><span class="hljs-params">(RedisSpider)</span>:</span>
+    name = <span class="hljs-string">&apos;fang&apos;</span>
+    <span class="hljs-comment">#allowed_domains = [&apos;fang.5i5j.com&apos;]</span>
+    <span class="hljs-comment">#start_urls = [&apos;https://fang.5i5j.com/bj/loupan/&apos;]</span>
+    redis_key = <span class="hljs-string">&apos;fangspider:start_urls&apos;</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, *args, **kwargs)</span>:</span>
+        <span class="hljs-comment"># Dynamically define the allowed domains list.</span>
+        domain = kwargs.pop(<span class="hljs-string">&apos;domain&apos;</span>, <span class="hljs-string">&apos;&apos;</span>)
+        self.allowed_domains = filter(<span class="hljs-keyword">None</span>, domain.split(<span class="hljs-string">&apos;,&apos;</span>))
+        super(FangSpider, self).__init__(*args, **kwargs)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">parse</span><span class="hljs-params">(self, response)</span>:</span>
+        <span class="hljs-comment">#print(response.status)</span>
+        hlist = response.css(<span class="hljs-string">&quot;div.houseList_list&quot;</span>)
+        <span class="hljs-keyword">for</span> vo <span class="hljs-keyword">in</span> hlist:
+            item = FangItem()
+            item[<span class="hljs-string">&apos;title&apos;</span>] = vo.css(<span class="hljs-string">&quot;h3.fontS20 a::text&quot;</span>).extract_first()
+            item[<span class="hljs-string">&apos;address&apos;</span>] = vo.css(<span class="hljs-string">&quot;span.addressName::text&quot;</span>).extract_first()
+            item[<span class="hljs-string">&apos;time&apos;</span>] = vo.re(<span class="hljs-string">&quot;&lt;span&gt;(.*?)&#x5F00;&#x76D8;&lt;/span&gt;&quot;</span>)[<span class="hljs-number">0</span>]
+            item[<span class="hljs-string">&apos;clicks&apos;</span>] = vo.re(<span class="hljs-string">&quot;&lt;span&gt;&lt;i&gt;([0-9]+)&lt;/i&gt;&#x6D4F;&#x89C8;&lt;/span&gt;&quot;</span>)[<span class="hljs-number">0</span>]
+            item[<span class="hljs-string">&apos;price&apos;</span>] = vo.css(<span class="hljs-string">&quot;i.fontS24::text&quot;</span>).extract_first()
+            print(item)
+            <span class="hljs-keyword">yield</span> item
+        <span class="hljs-comment">#pass</span>
+</code></pre>
+<ul>
+<li>&#x67E5;&#x770B;pipelines.py&#x4FDD;&#x6301;&#x4E0D;&#x53D8;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DemoPipeline</span><span class="hljs-params">(object)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process_item</span><span class="hljs-params">(self, item, spider)</span>:</span>
+        print(<span class="hljs-string">&quot;=&quot;</span>*<span class="hljs-number">70</span>)
+        <span class="hljs-keyword">return</span> item
+</code></pre>
+<ul>
+<li>&#x7F16;&#x8F91;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;settings.py&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-python">...
+
+ITEM_PIPELINES = {
+    <span class="hljs-comment">#&apos;demo.pipelines.DemoPipeline&apos;: 300,</span>
+    <span class="hljs-string">&apos;scrapy_redis.pipelines.RedisPipeline&apos;</span>: <span class="hljs-number">400</span>,
+}
+
+...
+
+<span class="hljs-comment"># &#x6307;&#x5B9A;&#x4F7F;&#x7528;scrapy-redis&#x7684;&#x53BB;&#x91CD;</span>
+DUPEFILTER_CLASS = <span class="hljs-string">&apos;scrapy_redis.dupefilter.RFPDupeFilter&apos;</span>
+
+<span class="hljs-comment"># &#x6307;&#x5B9A;&#x4F7F;&#x7528;scrapy-redis&#x7684;&#x8C03;&#x5EA6;&#x5668;</span>
+SCHEDULER = <span class="hljs-string">&quot;scrapy_redis.scheduler.Scheduler&quot;</span>
+
+<span class="hljs-comment"># &#x5728;redis&#x4E2D;&#x4FDD;&#x6301;scrapy-redis&#x7528;&#x5230;&#x7684;&#x5404;&#x4E2A;&#x961F;&#x5217;&#xFF0C;&#x4ECE;&#x800C;&#x5141;&#x8BB8;&#x6682;&#x505C;&#x548C;&#x6682;&#x505C;&#x540E;&#x6062;&#x590D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E0D;&#x6E05;&#x7406;redis queues</span>
+SCHEDULER_PERSIST = <span class="hljs-keyword">True</span>
+
+<span class="hljs-comment"># &#x6307;&#x5B9A;&#x6392;&#x5E8F;&#x722C;&#x53D6;&#x5730;&#x5740;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x961F;&#x5217;&#xFF0C;</span>
+<span class="hljs-comment"># &#x9ED8;&#x8BA4;&#x7684; &#x6309;&#x4F18;&#x5148;&#x7EA7;&#x6392;&#x5E8F;(Scrapy&#x9ED8;&#x8BA4;)&#xFF0C;&#x7531;sorted set&#x5B9E;&#x73B0;&#x7684;&#x4E00;&#x79CD;&#x975E;FIFO&#x3001;LIFO&#x65B9;&#x5F0F;&#x3002;</span>
+SCHEDULER_QUEUE_CLASS = <span class="hljs-string">&apos;scrapy_redis.queue.SpiderPriorityQueue&apos;</span>
+
+<span class="hljs-comment"># REDIS_URL = &apos;redis://localhost:6379&apos; # &#x4E00;&#x822C;&#x60C5;&#x51B5;&#x53EF;&#x4EE5;&#x7701;&#x53BB;</span>
+REDIS_HOST = <span class="hljs-string">&apos;localhost&apos;</span> <span class="hljs-comment"># &#x4E5F;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x60C5;&#x51B5;&#x6539;&#x6210; localhost</span>
+REDIS_PORT = <span class="hljs-number">6379</span>
+</code></pre>
+<ul>
+<li>&#x6D4B;&#x8BD5;&#xFF1A;&#x722C;&#x53D6;&#x5177;&#x4F53;&#x623F;&#x5C4B;&#x4FE1;&#x606F;</li>
+</ul>
+<pre><code># &#x8FDB;&#x5165;&#x722C;&#x866B;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x627E;&#x5230;&#x722C;&#x866B;&#x6587;&#x4EF6;&#xFF1A;
+$ scrapy runspider fang.py
+</code></pre><p>&#x53E6;&#x542F;&#x4E00;&#x4E2A;&#x7EC8;&#x7AEF;&#xFF0C;&#x5E76;&#x8FDE;&#x63A5;redis&#x6570;&#x636E;&#x5E93;</p>
+<pre><code>$ redis_cli -p 6379
+
+6379 &gt;lpush fangspider:start_urls https://fang.5i5j.com/bj/loupan/
+</code></pre><h4 id="&#x2461;-&#x7F16;&#x5199;master&#x4E3B;&#x9879;&#x76EE;&#x4EE3;&#x7801;&#xFF1A;">&#x2461; &#x7F16;&#x5199;master(&#x4E3B;)&#x9879;&#x76EE;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<ul>
+<li>&#x7F16;&#x8F91;items.py &#x50A8;&#x5B58;url&#x5730;&#x5740;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> scrapy
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MasterItem</span><span class="hljs-params">(scrapy.Item)</span>:</span>
+    <span class="hljs-comment"># define the fields for your item here like:</span>
+    url = scrapy.Field()  
+    <span class="hljs-comment">#pass</span>
+</code></pre>
+<ul>
+<li>&#x7F16;&#x8F91;&#x722C;&#x866B;&#x6587;&#x4EF6;&#xFF1A;fang.py</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># -*- coding: utf-8 -*-</span>
+<span class="hljs-keyword">from</span> scrapy.spider <span class="hljs-keyword">import</span> CrawlSpider,Rule  
+<span class="hljs-keyword">from</span> scrapy.linkextractors <span class="hljs-keyword">import</span> LinkExtractor  
+<span class="hljs-keyword">from</span> demo.items <span class="hljs-keyword">import</span> MasterItem  
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">FangSpider</span><span class="hljs-params">(CrawlSpider)</span>:</span>  
+
+    name = <span class="hljs-string">&apos;master&apos;</span>  
+    allowed_domains = [<span class="hljs-string">&apos;fang.5i5j.com&apos;</span>]
+    start_urls = [<span class="hljs-string">&apos;https://fang.5i5j.com/bj/loupan/&apos;</span>] 
+    item = MasterItem()  
+
+    <span class="hljs-comment">#Rule&#x662F;&#x5728;&#x5B9A;&#x4E49;&#x62BD;&#x53D6;&#x94FE;&#x63A5;&#x7684;&#x89C4;&#x5219;</span>
+    rules = (  
+        Rule(LinkExtractor(allow=(<span class="hljs-string">&apos;https://fang.5i5j.com/bj/loupan/n[0-9]+/&apos;</span>,)), callback=<span class="hljs-string">&apos;parse_item&apos;</span>,  
+             follow=<span class="hljs-keyword">True</span>),  
+    )  
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">parse_item</span><span class="hljs-params">(self,response)</span>:</span>  
+        item = self.item  
+        item[<span class="hljs-string">&apos;url&apos;</span>] = response.url  
+        <span class="hljs-keyword">return</span> item
+</code></pre>
+<ul>
+<li>&#x7F16;&#x8F91;pipelines.py&#x8D1F;&#x8D23;&#x5B58;&#x50A8;&#x722C;&#x53D6;&#x7684;url&#x5730;&#x5740;&#x5230;redis&#x4E2D;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> redis,re
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MasterPipeline</span><span class="hljs-params">(object)</span>:</span>  
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self,host,port)</span>:</span>
+        <span class="hljs-comment">#&#x8FDE;&#x63A5;redis&#x6570;&#x636E;&#x5E93;</span>
+        self.r = redis.Redis(host=host, port=port, decode_responses=<span class="hljs-keyword">True</span>)
+        <span class="hljs-comment">#self.redis_url = &apos;redis://password:@localhost:6379/&apos;  </span>
+        <span class="hljs-comment">#self.r = redis.Redis.from_url(self.redis_url,decode_responses=True)  </span>
+
+<span class="hljs-meta">    @classmethod</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">from_crawler</span><span class="hljs-params">(cls,crawler)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;&#x6CE8;&#x5165;&#x5B9E;&#x4F8B;&#x5316;&#x5BF9;&#x8C61;&#xFF08;&#x4F20;&#x5165;&#x53C2;&#x6570;&#xFF09;&apos;&apos;&apos;</span>
+        <span class="hljs-keyword">return</span> cls(
+            host = crawler.settings.get(<span class="hljs-string">&quot;REDIS_HOST&quot;</span>),
+            port = crawler.settings.get(<span class="hljs-string">&quot;REDIS_PORT&quot;</span>),
+        )
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process_item</span><span class="hljs-params">(self, item, spider)</span>:</span>  
+        <span class="hljs-comment">#&#x4F7F;&#x7528;&#x6B63;&#x5219;&#x5224;&#x65AD;url&#x5730;&#x5740;&#x662F;&#x5426;&#x6709;&#x6548;&#xFF0C;&#x5E76;&#x5199;&#x5165;redis&#x3002;</span>
+        <span class="hljs-keyword">if</span> re.search(<span class="hljs-string">&apos;/bj/loupan/&apos;</span>,item[<span class="hljs-string">&apos;url&apos;</span>]):
+            self.r.lpush(<span class="hljs-string">&apos;fangspider:start_urls&apos;</span>, item[<span class="hljs-string">&apos;url&apos;</span>])
+        <span class="hljs-keyword">else</span>:
+            self.r.lpush(<span class="hljs-string">&apos;fangspider:no_urls&apos;</span>, item[<span class="hljs-string">&apos;url&apos;</span>])
+</code></pre>
+<ul>
+<li>&#x7F16;&#x8F91;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;settings.py&#x914D;&#x7F6E;&#x6587;&#x4EF6;:</li>
+</ul>
+<pre><code class="lang-python">ITEM_PIPELINES = {
+    <span class="hljs-string">&apos;demo.pipelines.MasterPipeline&apos;</span>: <span class="hljs-number">300</span>,
+    <span class="hljs-comment">#&apos;scrapy_redis.pipelines.RedisPipeline&apos;: 400,</span>
+}
+
+<span class="hljs-meta">... </span>        
+
+<span class="hljs-comment"># &#x6307;&#x5B9A;&#x4F7F;&#x7528;scrapy-redis&#x7684;&#x53BB;&#x91CD;</span>
+DUPEFILTER_CLASS = <span class="hljs-string">&apos;scrapy_redis.dupefilter.RFPDupeFilter&apos;</span>
+
+<span class="hljs-comment"># &#x6307;&#x5B9A;&#x4F7F;&#x7528;scrapy-redis&#x7684;&#x8C03;&#x5EA6;&#x5668;</span>
+SCHEDULER = <span class="hljs-string">&quot;scrapy_redis.scheduler.Scheduler&quot;</span>
+
+<span class="hljs-comment"># &#x5728;redis&#x4E2D;&#x4FDD;&#x6301;scrapy-redis&#x7528;&#x5230;&#x7684;&#x5404;&#x4E2A;&#x961F;&#x5217;&#xFF0C;&#x4ECE;&#x800C;&#x5141;&#x8BB8;&#x6682;&#x505C;&#x548C;&#x6682;&#x505C;&#x540E;&#x6062;&#x590D;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E0D;&#x6E05;&#x7406;redis queues</span>
+SCHEDULER_PERSIST = <span class="hljs-keyword">True</span>
+
+<span class="hljs-comment"># &#x6307;&#x5B9A;&#x6392;&#x5E8F;&#x722C;&#x53D6;&#x5730;&#x5740;&#x65F6;&#x4F7F;&#x7528;&#x7684;&#x961F;&#x5217;&#xFF0C;</span>
+<span class="hljs-comment"># &#x9ED8;&#x8BA4;&#x7684; &#x6309;&#x4F18;&#x5148;&#x7EA7;&#x6392;&#x5E8F;(Scrapy&#x9ED8;&#x8BA4;)&#xFF0C;&#x7531;sorted set&#x5B9E;&#x73B0;&#x7684;&#x4E00;&#x79CD;&#x975E;FIFO&#x3001;LIFO&#x65B9;&#x5F0F;&#x3002;</span>
+SCHEDULER_QUEUE_CLASS = <span class="hljs-string">&apos;scrapy_redis.queue.SpiderPriorityQueue&apos;</span>
+
+<span class="hljs-comment"># REDIS_URL = &apos;redis:password//127.0.0.1:6379&apos; # &#x4E00;&#x822C;&#x60C5;&#x51B5;&#x53EF;&#x4EE5;&#x7701;&#x53BB;</span>
+REDIS_HOST = <span class="hljs-string">&apos;127.0.0.1&apos;</span> <span class="hljs-comment"># &#x4E5F;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x60C5;&#x51B5;&#x6539;&#x6210; localhost</span>
+REDIS_PORT = <span class="hljs-number">6379</span>
+</code></pre>
+<ul>
+<li>&#x6D4B;&#x8BD5;&#xFF1A;&#x722C;&#x53D6;&#x66F4;&#x591A;&#x7684;url&#x5730;&#x5740;&#xFF1A;</li>
+</ul>
+<pre><code># &#x8FDB;&#x5165;&#x722C;&#x866B;&#x6587;&#x4EF6;&#x76EE;&#x5F55;&#x627E;&#x5230;&#x722C;&#x866B;&#x6587;&#x4EF6;&#xFF1A;
+$ scrapy runspider fang.py
+</code></pre><h3 id="175-&#x5904;&#x7406;&#x7684;redis&#x91CC;&#x7684;&#x6570;&#x636E;&#xFF1A;">17.5 &#x5904;&#x7406;&#x7684;Redis&#x91CC;&#x7684;&#x6570;&#x636E;&#xFF1A;</h3>
+<ul>
+<li><p>&#x7F51;&#x7AD9;&#x7684;&#x6570;&#x636E;&#x722C;&#x56DE;&#x6765;&#x4E86;&#xFF0C;&#x4F46;&#x662F;&#x653E;&#x5728;Redis&#x91CC;&#x6CA1;&#x6709;&#x5904;&#x7406;&#x3002;&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x91CC;&#x9762;&#x6CA1;&#x6709;&#x5B9A;&#x5236;&#x81EA;&#x5DF1;&#x7684;ITEM_PIPELINES&#xFF0C;&#x800C;&#x662F;&#x4F7F;&#x7528;&#x4E86;RedisPipeline&#xFF0C;&#x6240;&#x4EE5;&#x73B0;&#x5728;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x90FD;&#x88AB;&#x4FDD;&#x5B58;&#x5728;redis&#x7684;demo:items&#x952E;&#x4E2D;&#xFF0C;&#x6240;&#x4EE5;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x53E6;&#x5916;&#x505A;&#x5904;&#x7406;&#x3002;</p>
+</li>
+<li><p>&#x5728;scrapy-youyuan&#x76EE;&#x5F55;&#x4E0B;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4E00;&#x4E2A;process_items.py&#x6587;&#x4EF6;&#xFF0C;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x5C31;&#x662F;scrapy-redis&#x7684;example&#x63D0;&#x4F9B;&#x7684;&#x4ECE;redis&#x8BFB;&#x53D6;item&#x8FDB;&#x884C;&#x5904;&#x7406;&#x7684;&#x6A21;&#x7248;&#x3002;</p>
+</li>
+<li><p>&#x5047;&#x8BBE;&#x6211;&#x4EEC;&#x8981;&#x628A;demo:items&#x4E2D;&#x4FDD;&#x5B58;&#x7684;&#x6570;&#x636E;&#x8BFB;&#x51FA;&#x6765;&#x5199;&#x8FDB;MongoDB&#x6216;&#x8005;MySQL&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x81EA;&#x5DF1;&#x5199;&#x4E00;&#x4E2A;process_demo_profile.py&#x6587;&#x4EF6;&#xFF0C;&#x7136;&#x540E;&#x4FDD;&#x6301;&#x540E;&#x53F0;&#x8FD0;&#x884C;&#x5C31;&#x53EF;&#x4EE5;&#x4E0D;&#x505C;&#x5730;&#x5C06;&#x722C;&#x56DE;&#x6765;&#x7684;&#x6570;&#x636E;&#x5165;&#x5E93;&#x4E86;&#x3002;</p>
+</li>
+</ul>
+<h4 id="&#x5B58;&#x5165;&#x7684;mongodb">&#x5B58;&#x5165;&#x7684;MongoDB</h4>
+<ul>
+<li><p>&#x542F;&#x52A8;&#x7684;MongoDB&#x6570;&#x636E;&#x5E93;&#xFF1A;sudo mongod</p>
+</li>
+<li><p>&#x6267;&#x884C;&#x4E0B;&#x9762;&#x7A0B;&#x5E8F;&#xFF1A;python process_demo_mongodb.py</p>
+</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># process_demo_mongodb.py</span>
+
+<span class="hljs-keyword">import</span> json
+<span class="hljs-keyword">import</span> redis
+<span class="hljs-keyword">import</span> pymongo
+
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>:</span>
+
+    <span class="hljs-comment"># &#x6307;&#x5B9A;Redis&#x6570;&#x636E;&#x5E93;&#x4FE1;&#x606F;</span>
+    rediscli = redis.StrictRedis(host=<span class="hljs-string">&apos;127.0.0.1&apos;</span>, port=<span class="hljs-number">6379</span>, db=<span class="hljs-number">0</span>)
+    <span class="hljs-comment"># &#x6307;&#x5B9A;MongoDB&#x6570;&#x636E;&#x5E93;&#x4FE1;&#x606F;</span>
+    mongocli = pymongo.MongoClient(host=<span class="hljs-string">&apos;localhost&apos;</span>, port=<span class="hljs-number">27017</span>)
+
+    <span class="hljs-comment"># &#x521B;&#x5EFA;&#x6570;&#x636E;&#x5E93;&#x540D;</span>
+    db = mongocli[<span class="hljs-string">&apos;demodb&apos;</span>]
+    <span class="hljs-comment"># &#x521B;&#x5EFA;&#x7A7A;&#x95F4;</span>
+    sheet = db[<span class="hljs-string">&apos;fang&apos;</span>]
+
+    <span class="hljs-keyword">while</span> <span class="hljs-keyword">True</span>:
+        <span class="hljs-comment"># FIFO&#x6A21;&#x5F0F;&#x4E3A; blpop&#xFF0C;LIFO&#x6A21;&#x5F0F;&#x4E3A; brpop&#xFF0C;&#x83B7;&#x53D6;&#x952E;&#x503C;</span>
+        source, data = rediscli.blpop([<span class="hljs-string">&quot;demo:items&quot;</span>])
+
+        item = json.loads(data)
+        sheet.insert(item)
+
+        <span class="hljs-keyword">try</span>:
+            <span class="hljs-keyword">print</span> <span class="hljs-string">u&quot;Processing: %(name)s &lt;%(link)s&gt;&quot;</span> % item
+        <span class="hljs-keyword">except</span> KeyError:
+            <span class="hljs-keyword">print</span> <span class="hljs-string">u&quot;Error procesing: %r&quot;</span> % item
+
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+    main()
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="8.html" class="navigation navigation-prev " aria-label="Previous page: 16. 分布式爬虫原理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="10.html" class="navigation navigation-next " aria-label="Next page: 本周作业">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"17. Scrapy分布式实战","level":"1.4.9","depth":2,"next":{"title":"本周作业","level":"1.4.10","depth":2,"path":"week02/10.md","ref":"week02/10.md","articles":[]},"previous":{"title":"16. 分布式爬虫原理","level":"1.4.8","depth":2,"path":"week02/8.md","ref":"week02/8.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"week02/9.md","mtime":"2018-06-05T09:43:57.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-12T06:55:54.323Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

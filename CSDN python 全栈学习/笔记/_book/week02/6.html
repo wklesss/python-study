@@ -1,0 +1,828 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>14. 使用代理爬取信息实战 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="7.html" />
+    
+    
+    <link rel="prev" href="5.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../week01/">
+            
+                <a href="../week01/">
+            
+                    
+                    一、Python网络爬虫进阶实战(上)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../week01/1.html">
+            
+                <a href="../week01/1.html">
+            
+                    
+                    1. Scrapy框架介绍与安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../week01/2.html">
+            
+                <a href="../week01/2.html">
+            
+                    
+                    2. Scrapy框架的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../week01/3.html">
+            
+                <a href="../week01/3.html">
+            
+                    
+                    3. Selector选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../week01/4.html">
+            
+                <a href="../week01/4.html">
+            
+                    
+                    4. Spider的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../week01/5.html">
+            
+                <a href="../week01/5.html">
+            
+                    
+                    5. Downloader Middleware的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../week01/6.html">
+            
+                <a href="../week01/6.html">
+            
+                    
+                    6. Spider Middleware的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../week01/7.html">
+            
+                <a href="../week01/7.html">
+            
+                    
+                    7. ItemPipeline的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../week01/8.html">
+            
+                <a href="../week01/8.html">
+            
+                    
+                    8. Scrapy爬虫案例实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../week01/9.html">
+            
+                <a href="../week01/9.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    二、Python网络爬虫进阶实战(中)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    09. Selenium的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    10. Selenium爬取淘宝商品
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    11. MongoDB数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    12. Scrapy框架使用Selenium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    13. 代理的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    14. 使用代理爬取信息实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    15. Redis数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    16. 分布式爬虫原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    17. Scrapy分布式实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../week03/">
+            
+                <a href="../week03/">
+            
+                    
+                    三、Python网络爬虫进阶实战(下)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../week03/1.html">
+            
+                <a href="../week03/1.html">
+            
+                    
+                    18. App的信息爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../week03/2.html">
+            
+                <a href="../week03/2.html">
+            
+                    
+                    19. mitmproxy的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../week03/3.html">
+            
+                <a href="../week03/3.html">
+            
+                    
+                    20. App信息抓取实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../week03/4.html">
+            
+                <a href="../week03/4.html">
+            
+                    
+                    21. 从API爬取天气预报数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../week03/5.html">
+            
+                <a href="../week03/5.html">
+            
+                    
+                    22. 滑动验证码的识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../week03/6.html">
+            
+                <a href="../week03/6.html">
+            
+                    
+                    23. 爬虫项目需求分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../week03/7.html">
+            
+                <a href="../week03/7.html">
+            
+                    
+                    24. 爬虫项目架构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../week03/8.html">
+            
+                <a href="../week03/8.html">
+            
+                    
+                    25. 爬虫项目的代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../week03/9.html">
+            
+                <a href="../week03/9.html">
+            
+                    
+                    26. 使用web展示爬取信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../week03/10.html">
+            
+                <a href="../week03/10.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >14. 使用代理爬取信息实战</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="14-&#x4F7F;&#x7528;&#x4EE3;&#x7406;&#x6293;&#x53D6;&#x4FE1;&#x606F;&#x5B9E;&#x6218;">14. &#x4F7F;&#x7528;&#x4EE3;&#x7406;&#x6293;&#x53D6;&#x4FE1;&#x606F;&#x5B9E;&#x6218;</h1>
+<h3 id="141-&#x5B9E;&#x6218;&#x76EE;&#x6807;&#xFF1A;">14.1 &#x5B9E;&#x6218;&#x76EE;&#x6807;&#xFF1A;</h3>
+<ul>
+<li><p>&#x672C;&#x8282;&#x76EE;&#x6807;&#x662F;&#x5229;&#x7528;&#x4EE3;&#x7406;&#x722C;&#x53D6;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x7684;&#x6587;&#x7AE0;&#x4FE1;&#x606F;&#xFF0C;&#x4ECE;&#x4E2D;&#x63D0;&#x53D6;&#x6807;&#x9898;&#x3001;&#x6458;&#x8981;&#x3001;&#x53D1;&#x5E03;&#x65E5;&#x671F;&#x3001;&#x516C;&#x4F17;&#x53F7;&#x4EE5;&#x53CA;url&#x5730;&#x5740;&#x7B49;&#x5185;&#x5BB9;&#x3002;</p>
+</li>
+<li><p>&#x672C;&#x8282;&#x722C;&#x53D6;&#x7684;&#x662F;&#x641C;&#x7D22;&#x5173;&#x952E;&#x5B57;&#x4E3A;<code>python</code>&#x7684;&#xFF0C;&#x7C7B;&#x522B;&#x4E3A;<code>&#x5FAE;&#x4FE1;</code>&#x7684;&#x6240;&#x6709;&#x6587;&#x7AE0;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x5C06;&#x4FE1;&#x606F;&#x5B58;&#x50A8;&#x5230;MongoDB&#x4E2D;&#x3002;</p>
+</li>
+<li><p>URL&#x5730;&#x5740;&#xFF1A;<a href="http://weixin.sogou.com/weixin?type=2&amp;query=python&amp;ie=utf8&amp;s_from=input" target="_blank">http://weixin.sogou.com/weixin?type=2&amp;query=python&amp;ie=utf8&amp;s_from=input</a></p>
+</li>
+</ul>
+<h3 id="142-&#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#xFF1A;">14.2 &#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#xFF1A;</h3>
+<ul>
+<li>&#x9996;&#x5148;&#x5BF9;&#x8981;&#x722C;&#x53D6;&#x7684;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x7684;&#x6587;&#x7AE0;&#x4FE1;&#x606F;&#x8FDB;&#x884C;&#x5206;&#x6790;&#xFF0C;&#x786E;&#x5B9A;url&#x5730;&#x5740;&#x3002;</li>
+<li>&#x5206;&#x6790;&#x8981;&#x722C;&#x53D6;&#x7684;&#x4FE1;&#x606F;&#x52A0;&#x8F7D;&#x65B9;&#x5F0F;&#xFF0C;&#x786E;&#x5B9A;&#x5C5E;&#x6027;&#x666E;&#x901A;&#x52A0;&#x8F7D;&#xFF08;&#x5728;&#x54CD;&#x5E94;&#x91CC;&#x4F7F;&#x7528;xpath&#x6216;css&#x89E3;&#x6790;&#xFF09;&#x3002;</li>
+<li>&#x5206;&#x6790;&#x5982;&#x4F55;&#x83B7;&#x53D6;&#x66F4;&#x591A;&#x9875;&#x4FE1;&#x606F;&#x7684;&#x722C;&#x53D6;&#x3002;&#x5C31;&#x662F;&#x5982;&#x4F55;&#x8DF3;&#x8F6C;&#x4E0B;&#x4E00;&#x9875;&#x3002;(&#x6CA1;&#x6709;&#x767B;&#x5F55;&#x7684;&#x7528;&#x6237;&#x53EA;&#x80FD;&#x770B;&#x5230;10&#x9875;&#xFF0C;&#x767B;&#x9646;&#x540E;&#x624D;&#x53EF;&#x770B;&#x5230;&#x5176;&#x4ED6;&#x9875;)</li>
+<li>&#x672C;&#x6B21;&#x6848;&#x4F8B;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x7684;Python&#x5E93;&#xFF1A;Scrapy&#x3001;requests&#x3001;pymongo&#x3002;</li>
+<li>&#x5728;MongoDB&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;<code>wenxin</code>&#xFF0C;&#x8BA9;&#x540E;&#x5728;&#x6B64;&#x5E93;&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x96C6;&#x5408;<code>wx</code>&#xFF0C;&#x6700;&#x540E;&#x5F00;&#x542F;MongoDB&#x6570;&#x636E;&#x5E93;</li>
+</ul>
+<h3 id="143-&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#xFF1A;">14.3 &#x5177;&#x4F53;&#x5B9E;&#x73B0;&#xFF1A;</h3>
+<h4 id="&#x2460;-&#x521B;&#x5EFA;&#x9879;&#x76EE;">&#x2460; &#x521B;&#x5EFA;&#x9879;&#x76EE;</h4>
+<ul>
+<li>&#x9996;&#x5148;&#x65B0;&#x5EFA;&#x9879;&#x76EE;&#xFF0C;&#x540D;&#x4E3A;weixin&#xFF1A;</li>
+</ul>
+<pre><code>scrapy startproject weixin
+</code></pre><ul>
+<li>&#x8FDB;&#x5165;&#x9879;&#x76EE;weixin&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;Spider&#xFF08;&#x722C;&#x866B;&#x7C7B;wx&#xFF09;&#xFF1A;</li>
+</ul>
+<pre><code>cd weixin
+scrapy genspider wx weixin.sogou.com
+</code></pre><ul>
+<li>&#x8FDB;&#x5165;settings.py&#x7684;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;&#x5C06;ROBOTSTXT_OBEY&#x6539;&#x4E3A;false&#xFF0C;&#x5FFD;&#x7565;&#x722C;&#x866B;&#x534F;&#x8BAE;</li>
+</ul>
+<pre><code>ROBOTSTXT_OBEY = False
+</code></pre><h4 id="&#x2461;-&#x5B9A;&#x4E49;item&#x7C7B;">&#x2461; &#x5B9A;&#x4E49;Item&#x7C7B;</h4>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5B9A;&#x4E49;&#x4FE1;&#x606F;&#x5C01;&#x88C5;&#x7C7B;&#xFF08;&#x6807;&#x9898;&#x3001;&#x6458;&#x8981;&#x3001;&#x516C;&#x4F17;&#x53F7;&#x3001;&#x65F6;&#x95F4;&#x3001;URL&#x5730;&#x5740;&#xFF09;</span>
+<span class="hljs-keyword">import</span> scrapy
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WxItem</span><span class="hljs-params">(scrapy.Item)</span>:</span>
+    <span class="hljs-comment"># define the fields for your item here like:</span>
+    collection = &#x2018;wx&#x2019;
+    title = scrapy.Field()
+    content = scrapy.Field()
+    nickname = scrapy.Field()
+    date = scrapy.Field()
+    url = scrapy.Field()
+</code></pre>
+<h4 id="&#x2462;-&#x89E3;&#x6790;&#x9875;&#x9762;">&#x2462; &#x89E3;&#x6790;&#x9875;&#x9762;</h4>
+<ul>
+<li>&#x8FDB;&#x5165;spider/wx.py&#x6587;&#x4EF6;&#x4E2D;&#x7F16;&#x5199;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># -*- coding: utf-8 -*-</span>
+<span class="hljs-keyword">import</span> scrapy
+<span class="hljs-keyword">from</span> weixin.items <span class="hljs-keyword">import</span> WxItem
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WxSpider</span><span class="hljs-params">(scrapy.Spider)</span>:</span>
+    name = <span class="hljs-string">&apos;wx&apos;</span>
+    allowed_domains = [<span class="hljs-string">&apos;weixin.sogou.com&apos;</span>]
+    start_urls = [<span class="hljs-string">&apos;http://weixin.sogou.com/weixin?query=python&amp;type=2&amp;page=1&amp;ie=utf8&apos;</span>]
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">parse</span><span class="hljs-params">(self, response)</span>:</span>
+        <span class="hljs-comment">#&#x89E3;&#x6790;&#x51FA;&#x5F53;&#x524D;&#x9875;&#x9762;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x6587;&#x7AE0;&#x4FE1;&#x606F;</span>
+        ullist = response.selector.css(<span class="hljs-string">&quot;ul.news-list li&quot;</span>)
+        <span class="hljs-comment">#&#x904D;&#x5386;&#x6587;&#x7AE0;&#x4FE1;&#x606F;</span>
+        <span class="hljs-keyword">for</span> ul <span class="hljs-keyword">in</span> ullist:
+            <span class="hljs-comment">#&#x89E3;&#x6790;&#x5177;&#x4F53;&#x4FE1;&#x606F;&#x5E76;&#x5C01;&#x88C5;&#x5230;item&#x4E2D;</span>
+            item = WxItem()
+            item[<span class="hljs-string">&apos;title&apos;</span>] = ul.css(<span class="hljs-string">&quot;h3 a&quot;</span>).re_first(<span class="hljs-string">&quot;&lt;a.*?&gt;(.*?)&lt;/a&gt;&quot;</span>)  
+            item[<span class="hljs-string">&apos;content&apos;</span>] = ul.css(<span class="hljs-string">&quot;p.txt-info::text&quot;</span>).extract_first()
+            item[<span class="hljs-string">&apos;nickname&apos;</span>] = ul.css(<span class="hljs-string">&quot;a.account::text&quot;</span>).extract_first()
+            item[<span class="hljs-string">&apos;date&apos;</span>] = ul.re_first(<span class="hljs-string">&quot;document.write\(timeConvert\(&apos;([0-9]+)&apos;\)\)&quot;</span>)
+            item[<span class="hljs-string">&apos;url&apos;</span>] = ul.css(<span class="hljs-string">&quot;h3 a::attr(href)&quot;</span>).extract_first()
+            print(item)
+            <span class="hljs-comment"># &#x4EA4;&#x7ED9;pipelines&#xFF08;item&#x7BA1;&#x9053;&#xFF09;&#x5904;&#x7406;</span>
+            <span class="hljs-keyword">yield</span> item
+
+        <span class="hljs-comment">#&#x89E3;&#x6790;&#x51FA;&#x4E0B;&#x4E00;&#x9801;&#x7684;url&#x5730;&#x5740;</span>
+        next_url = response.selector.css(<span class="hljs-string">&quot;#sogou_next::attr(href)&quot;</span>).extract_first()
+        <span class="hljs-comment">#&#x5224;&#x65AD;&#x662F;&#x5426;&#x5B58;&#x5728;</span>
+        <span class="hljs-keyword">if</span> next_url:
+            url = response.urljoin(next_url) <span class="hljs-comment">#&#x6784;&#x5EFA;&#x7EDD;&#x5BF9;url&#x5730;&#x5740;</span>
+            <span class="hljs-keyword">yield</span> scrapy.Request(url=url,callback=self.parse) <span class="hljs-comment">#&#x4EA4;&#x7ED9;&#x8C03;&#x5EA6;&#x53BB;&#x7EE7;&#x7EED;&#x722C;&#x53D6;&#x4E0B;&#x4E00;&#x9875;&#x4FE1;&#x606F;</span>
+</code></pre>
+<h4 id="&#x2463;-&#x5B58;&#x50A8;&#x7ED3;&#x679C;">&#x2463; &#x5B58;&#x50A8;&#x7ED3;&#x679C;</h4>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> pymongo
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MongoPipeline</span><span class="hljs-params">(object)</span>:</span>
+    <span class="hljs-string">&apos;&apos;&apos; &#x5B8C;&#x6210;MongoDB&#x6570;&#x636E;&#x5E93;&#x5BF9;Item&#x4FE1;&#x606F;&#x7684;&#x5B58;&#x50A8;&apos;&apos;&apos;</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, mongo_uri, mongo_db)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;&#x5BF9;&#x8C61;&#x521D;&#x59CB;&#x5316;&apos;&apos;&apos;</span>
+        self.mongo_uri = mongo_uri
+        self.mongo_db = mongo_db
+
+<span class="hljs-meta">    @classmethod</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">from_crawler</span><span class="hljs-params">(cls, crawler)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;&#x901A;&#x8FC7;&#x4F9D;&#x8D56;&#x6CE8;&#x5165;&#x65B9;&#x5F0F;&#x5B9E;&#x4F8B;&#x5316;&#x5F53;&#x524D;&#x7C7B;&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;&#xFF0C;&#x53C2;&#x6570;&#x662F;&#x4ECE;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x83B7;&#x53D6;MongoDB&#x4FE1;&#x606F;&apos;&apos;&apos;</span>
+        <span class="hljs-keyword">return</span> cls(mongo_uri=crawler.settings.get(<span class="hljs-string">&apos;MONGO_URI&apos;</span>), mongo_db=crawler.settings.get(<span class="hljs-string">&apos;MONGO_DB&apos;</span>))
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">open_spider</span><span class="hljs-params">(self, spider)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;Spider&#x5F00;&#x542F;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#xFF0C;&#x8D1F;&#x8D23;&#x8FDE;&#x63A5;MongoDB&#xFF0C;&#x5E76;&#x9009;&#x62E9;&#x6570;&#x636E;&#x5E93;&apos;&apos;&apos;</span>
+        self.client = pymongo.MongoClient(self.mongo_uri)
+        self.db = self.client[self.mongo_db]
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process_item</span><span class="hljs-params">(self, item, spider)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;&#x9009;&#x62E9;&#x5BF9;&#x5E94;&#x96C6;&#x5408;&#x5E76;&#x5199;&#x5165;Item&#x4FE1;&#x606F;&apos;&apos;&apos;</span>
+        self.db[item.collection].insert(dict(item))
+        <span class="hljs-keyword">return</span> item
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">close_spider</span><span class="hljs-params">(self, spider)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;Spider&#x5173;&#x95ED;&#x65F6;&#x81EA;&#x52A8;&#x8C03;&#x7528;&#xFF0C;&#x8D1F;&#x8D23;&#x5173;&#x95ED;MongoDB&#x7684;&#x8FDE;&#x63A5;&apos;&apos;&apos;</span>
+        self.client.close()
+</code></pre>
+<ul>
+<li>&#x4FEE;&#x6539;&#x914D;&#x7F6E;&#x6587;&#x4EF6;settings.py&#x4FE1;&#x606F;&#xFF1A;&#xFF08;&#x5F00;&#x542F;MongoPipeline&#x7BA1;&#x9053;&#x7C7B;&#xFF0C;&#x8BBE;&#x7F6E;MongoDB&#x7684;&#x8FDE;&#x63A5;&#x4FE1;&#x606F;&#xFF09;</li>
+</ul>
+<pre><code class="lang-python">ITEM_PIPELINES = {
+    <span class="hljs-string">&apos;scrapyseleniumtest.pipelines.MongoPipeline&apos;</span>: <span class="hljs-number">300</span>,
+}
+
+MONGO_URI = <span class="hljs-string">&apos;localhost&apos;</span>
+
+MONGO_DB = <span class="hljs-string">&apos;taobao&apos;</span>
+</code></pre>
+<h4 id="&#x2464;--&#x6267;&#x884C;&#x722C;&#x866B;&#x6587;&#x4EF6;&#x5F00;&#x59CB;&#x4FE1;&#x606F;&#x722C;&#x53D6;">&#x2464;  &#x6267;&#x884C;&#x722C;&#x866B;&#x6587;&#x4EF6;&#x5F00;&#x59CB;&#x4FE1;&#x606F;&#x722C;&#x53D6;</h4>
+<pre><code>scrapy crawl wx
+</code></pre><ul>
+<li>&#x6CE8;&#x610F;&#xFF1A;&#x5F53;&#x524D;&#x722C;&#x53D6;&#x4FE1;&#x606F;&#x8FC7;&#x591A;&#x65F6;&#x4F1A;&#x62A5;&#x5982;&#x4E0B;302&#x9519;&#x8BEF;&#xFF1A;</li>
+</ul>
+<pre><code>2018-05-30 22:40:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (
+302) to &lt;GET http://weixin.sogou.com/antispider/?from=%2fweixin%3Fquery%3dpython
+%26type%3d2%26page%3d1%26ie%3dutf8&gt; from &lt;GET http://weixin.sogou.com/weixin?que
+ry=python&amp;type=2&amp;page=1&amp;ie=utf8&gt;
+</code></pre><p><img src="../images/week02/wx.png" alt=""></p>
+<h4 id="&#x2465;--&#x5728;&#x4E2D;&#x95F4;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;&#x4ED8;&#x8D39;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x6765;&#x89E3;&#x51B3;&#x4E0A;&#x9762;&#x9519;&#x8BEF;&#xFF1A;">&#x2465;  &#x5728;&#x4E2D;&#x95F4;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;&#x4ED8;&#x8D39;&#x4EE3;&#x7406;&#x670D;&#x52A1;&#x6765;&#x89E3;&#x51B3;&#x4E0A;&#x9762;&#x9519;&#x8BEF;&#xFF1A;</h4>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5728;middlewares.py&#x6587;&#x4EF6;&#x4E2D;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;Downloader&#x4E2D;&#x95F4;&#x4EF6;</span>
+<span class="hljs-keyword">import</span> requests
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">HttpbinProxyMiddleware</span><span class="hljs-params">(object)</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">process_request</span><span class="hljs-params">(self, request, spider)</span>:</span>
+        pro_addr = requests.get(<span class="hljs-string">&apos;http://tvp.daxiangdaili.com/ip/?tid=559775358931681&amp;num=1&apos;</span>).text
+        request.meta[<span class="hljs-string">&apos;proxy&apos;</span>] = <span class="hljs-string">&apos;http://&apos;</span> + pro_addr
+        <span class="hljs-comment"># &#x8BBE;&#x7F6E;&#x542F;&#x52A8;&#x4E0A;&#x9762;&#x6211;&#x4EEC;&#x5199;&#x7684;&#x8FD9;&#x4E2A;&#x4EE3;&#x7406;</span>
+
+<span class="hljs-comment">#&#x5728;settings.py&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;.&#x8BBE;&#x7F6E;&#x6211;&#x4EEC;&#x81EA;&#x5B9A;&#x4E49;&#x7684;Downloader MiddleWares&#x4E2D;&#x95F4;&#x4EF6;&#x8BBE;&#x7F6E;&#xFF1A;</span>
+DOWNLOADER_MIDDLEWARES = {
+   <span class="hljs-string">&apos;httpbin.middlewares.HttpbinProxyMiddleware&apos;</span>: <span class="hljs-number">543</span>,
+}
+</code></pre>
+<h3 id="&#x4F5C;&#x4E1A;&#xFF1A;&#x6CA1;&#x6709;&#x767B;&#x5F55;&#x7684;&#x7528;&#x6237;&#x53EA;&#x80FD;&#x770B;&#x5230;10&#x9875;&#xFF0C;&#x767B;&#x9646;&#x540E;&#x624D;&#x53EF;&#x770B;&#x5230;&#x5176;&#x4ED6;&#x9875;&#xFF0C;&#x90A3;&#x4E48;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x722C;&#x53D6;&#x66F4;&#x591A;&#x9875;&#x4FE1;&#x606F;&#x5462;&#xFF1F;">&#x4F5C;&#x4E1A;&#xFF1A;&#x6CA1;&#x6709;&#x767B;&#x5F55;&#x7684;&#x7528;&#x6237;&#x53EA;&#x80FD;&#x770B;&#x5230;10&#x9875;&#xFF0C;&#x767B;&#x9646;&#x540E;&#x624D;&#x53EF;&#x770B;&#x5230;&#x5176;&#x4ED6;&#x9875;&#xFF0C;&#x90A3;&#x4E48;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x722C;&#x53D6;&#x66F4;&#x591A;&#x9875;&#x4FE1;&#x606F;&#x5462;&#xFF1F;</h3>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="5.html" class="navigation navigation-prev " aria-label="Previous page: 13. 代理的使用">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="7.html" class="navigation navigation-next " aria-label="Next page: 15. Redis数据库">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"14. 使用代理爬取信息实战","level":"1.4.6","depth":2,"next":{"title":"15. Redis数据库","level":"1.4.7","depth":2,"path":"week02/7.md","ref":"week02/7.md","articles":[]},"previous":{"title":"13. 代理的使用","level":"1.4.5","depth":2,"path":"week02/5.md","ref":"week02/5.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"week02/6.md","mtime":"2018-05-31T07:23:11.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-12T06:55:54.323Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,962 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4. Spider的使用 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="5.html" />
+    
+    
+    <link rel="prev" href="3.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    一、Python网络爬虫进阶实战(上)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    1. Scrapy框架介绍与安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    2. Scrapy框架的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    3. Selector选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    4. Spider的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    5. Downloader Middleware的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    6. Spider Middleware的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    7. ItemPipeline的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    8. Scrapy爬虫案例实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../week02/">
+            
+                <a href="../week02/">
+            
+                    
+                    二、Python网络爬虫进阶实战(中)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../week02/1.html">
+            
+                <a href="../week02/1.html">
+            
+                    
+                    09. Selenium的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../week02/2.html">
+            
+                <a href="../week02/2.html">
+            
+                    
+                    10. Selenium爬取淘宝商品
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../week02/3.html">
+            
+                <a href="../week02/3.html">
+            
+                    
+                    11. MongoDB数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../week02/4.html">
+            
+                <a href="../week02/4.html">
+            
+                    
+                    12. Scrapy框架使用Selenium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../week02/5.html">
+            
+                <a href="../week02/5.html">
+            
+                    
+                    13. 代理的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../week02/6.html">
+            
+                <a href="../week02/6.html">
+            
+                    
+                    14. 使用代理爬取信息实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../week02/7.html">
+            
+                <a href="../week02/7.html">
+            
+                    
+                    15. Redis数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../week02/8.html">
+            
+                <a href="../week02/8.html">
+            
+                    
+                    16. 分布式爬虫原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../week02/9.html">
+            
+                <a href="../week02/9.html">
+            
+                    
+                    17. Scrapy分布式实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../week02/10.html">
+            
+                <a href="../week02/10.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../week03/">
+            
+                <a href="../week03/">
+            
+                    
+                    三、Python网络爬虫进阶实战(下)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../week03/1.html">
+            
+                <a href="../week03/1.html">
+            
+                    
+                    18. App的信息爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../week03/2.html">
+            
+                <a href="../week03/2.html">
+            
+                    
+                    19. mitmproxy的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../week03/3.html">
+            
+                <a href="../week03/3.html">
+            
+                    
+                    20. App信息抓取实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../week03/4.html">
+            
+                <a href="../week03/4.html">
+            
+                    
+                    21. 从API爬取天气预报数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../week03/5.html">
+            
+                <a href="../week03/5.html">
+            
+                    
+                    22. 滑动验证码的识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../week03/6.html">
+            
+                <a href="../week03/6.html">
+            
+                    
+                    23. 爬虫项目需求分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="../week03/7.html">
+            
+                <a href="../week03/7.html">
+            
+                    
+                    24. 爬虫项目架构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="../week03/8.html">
+            
+                <a href="../week03/8.html">
+            
+                    
+                    25. 爬虫项目的代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="../week03/9.html">
+            
+                <a href="../week03/9.html">
+            
+                    
+                    26. 使用web展示爬取信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="../week03/10.html">
+            
+                <a href="../week03/10.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >4. Spider的使用</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="4-spider&#x7684;&#x4F7F;&#x7528;">4. Spider&#x7684;&#x4F7F;&#x7528;</h1>
+<ul>
+<li><p>&#x5728;Scrapy&#x4E2D;&#xFF0C;&#x8981;&#x6293;&#x53D6;&#x7F51;&#x7AD9;&#x7684;&#x94FE;&#x63A5;&#x914D;&#x7F6E;&#x3001;&#x6293;&#x53D6;&#x903B;&#x8F91;&#x3001;&#x89E3;&#x6790;&#x903B;&#x8F91;&#x91CC;&#x5176;&#x5B9E;&#x90FD;&#x662F;&#x5728;Spider&#x4E2D;&#x914D;&#x7F6E;&#x7684;&#x3002;</p>
+</li>
+<li><p>Spider&#x8981;&#x505A;&#x7684;&#x4E8B;&#x5C31;&#x662F;&#x6709;&#x4E24;&#x4EF6;&#xFF1A;<code>&#x5B9A;&#x4E49;&#x6293;&#x53D6;&#x7F51;&#x7AD9;&#x7684;&#x52A8;&#x4F5C;</code>&#x548C;<code>&#x5206;&#x6790;&#x722C;&#x53D6;&#x4E0B;&#x6765;&#x7684;&#x7F51;&#x9875;</code>&#x3002;</p>
+</li>
+</ul>
+<h4 id="41-spider&#x8FD0;&#x884C;&#x6D41;&#x7A0B;&#xFF1A;">4.1 Spider&#x8FD0;&#x884C;&#x6D41;&#x7A0B;&#xFF1A;</h4>
+<ul>
+<li><p>&#x6574;&#x4E2A;&#x6293;&#x53D6;&#x5FAA;&#x73AF;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;&#x6240;&#x8FF0;&#xFF1A;</p>
+<ul>
+<li>&#x4EE5;&#x521D;&#x59CB;&#x7684;URL&#x521D;&#x59CB;&#x5316;Request,&#x5E76;&#x8BBE;&#x7F6E;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;&#x8BF7;&#x6C42;&#x6210;&#x529F;&#x65F6;Response&#x751F;&#x6210;&#x5E76;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x7ED9;&#x8BE5;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x3002;</li>
+<li>&#x5728;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x5185;&#x5206;&#x6790;&#x8FD4;&#x56DE;&#x7684;&#x7F51;&#x9875;&#x5185;&#x5BB9;&#x3002;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x4E24;&#x79CD;&#x5F62;&#x5F0F;&#xFF0C;&#x4E00;&#x79CD;&#x4E3A;&#x5B57;&#x5178;&#x6216;Item&#x6570;&#x636E;&#x5BF9;&#x8C61;&#xFF1B;&#x53E6;&#x4E00;&#x79CD;&#x662F;&#x89E3;&#x6790;&#x5230;&#x4E0B;&#x4E00;&#x4E2A;&#x94FE;&#x63A5;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x5B57;&#x5178;&#x6216;Item&#x5BF9;&#x8C61;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x7ED3;&#x679C;&#x5B58;&#x5165;&#x6587;&#x4EF6;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Pipeline&#x5904;&#x7406;&#x5E76;&#x4FDD;&#x5B58;&#x3002;</li>
+<li>&#x5982;&#x679C;&#x8FD4;&#x56DE;Request&#xFF0C;Response&#x4F1A;&#x88AB;&#x4F20;&#x9012;&#x7ED9;Request&#x4E2D;&#x5B9A;&#x4E49;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x53C2;&#x6570;&#xFF0C;&#x5373;&#x518D;&#x6B21;&#x4F7F;&#x7528;&#x9009;&#x62E9;&#x5668;&#x6765;&#x5206;&#x6790;&#x751F;&#x6210;&#x6570;&#x636E;Item&#x3002;  </li>
+</ul>
+</li>
+</ul>
+<h4 id="42-spider&#x7C7B;&#x5206;&#x6790;&#xFF1A;">4.2 Spider&#x7C7B;&#x5206;&#x6790;&#xFF1A;</h4>
+<ul>
+<li>Spider&#x7C7B;&#x6E90;&#x4EE3;&#x7801;&#xFF1A;&#x6253;&#x5F00;&#x6587;&#x4EF6;<code>Python36/Lib/site-packages/scrapy/spiders/__init__.py</code></li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> logging
+<span class="hljs-keyword">import</span> warnings
+
+<span class="hljs-keyword">from</span> scrapy <span class="hljs-keyword">import</span> signals
+<span class="hljs-keyword">from</span> scrapy.http <span class="hljs-keyword">import</span> Request
+<span class="hljs-keyword">from</span> scrapy.utils.trackref <span class="hljs-keyword">import</span> object_ref
+<span class="hljs-keyword">from</span> scrapy.utils.url <span class="hljs-keyword">import</span> url_is_from_spider
+<span class="hljs-keyword">from</span> scrapy.utils.deprecate <span class="hljs-keyword">import</span> create_deprecated_class
+<span class="hljs-keyword">from</span> scrapy.exceptions <span class="hljs-keyword">import</span> ScrapyDeprecationWarning
+<span class="hljs-keyword">from</span> scrapy.utils.deprecate <span class="hljs-keyword">import</span> method_is_overridden
+
+<span class="hljs-comment">#&#x6240;&#x6709;&#x722C;&#x866B;&#x7684;&#x57FA;&#x7C7B;&#xFF0C;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x722C;&#x866B;&#x5FC5;&#x987B;&#x4ECE;&#x7EE7;&#x627F;&#x6B64;&#x7C7B;</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Spider</span><span class="hljs-params">(object_ref)</span>:</span>
+
+    <span class="hljs-comment">#&#x5B9A;&#x4E49;spider&#x540D;&#x5B57;&#x7684;&#x5B57;&#x7B26;&#x4E32;(string)&#x3002;spider&#x7684;&#x540D;&#x5B57;&#x5B9A;&#x4E49;&#x4E86;Scrapy&#x5982;&#x4F55;&#x5B9A;&#x4F4D;(&#x5E76;&#x521D;&#x59CB;&#x5316;)spider&#xFF0C;&#x6240;&#x4EE5;&#x5176;&#x5FC5;&#x987B;&#x662F;&#x552F;&#x4E00;&#x7684;&#x3002;</span>
+    <span class="hljs-comment">#name&#x662F;spider&#x6700;&#x91CD;&#x8981;&#x7684;&#x5C5E;&#x6027;&#xFF0C;&#x800C;&#x4E14;&#x662F;&#x5FC5;&#x987B;&#x7684;&#x3002;</span>
+    <span class="hljs-comment">#&#x4E00;&#x822C;&#x505A;&#x6CD5;&#x662F;&#x4EE5;&#x8BE5;&#x7F51;&#x7AD9;(domain)(&#x52A0;&#x6216;&#x4E0D;&#x52A0; &#x540E;&#x7F00; )&#x6765;&#x547D;&#x540D;spider&#x3002; &#x4F8B;&#x5982;&#xFF0C;&#x5982;&#x679C;spider&#x722C;&#x53D6; douban.com &#xFF0C;&#x8BE5;spider&#x901A;&#x5E38;&#x4F1A;&#x88AB;&#x547D;&#x540D;&#x4E3A; douban</span>
+    name = <span class="hljs-keyword">None</span>
+    custom_settings = <span class="hljs-keyword">None</span>
+
+    <span class="hljs-comment">#&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x63D0;&#x53D6;&#x722C;&#x866B;&#x540D;&#x5B57;&#xFF0C;start_ruls</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, name=None, **kwargs)</span>:</span>
+        <span class="hljs-keyword">if</span> name <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> <span class="hljs-keyword">None</span>:
+            self.name = name
+        <span class="hljs-comment"># &#x5982;&#x679C;&#x722C;&#x866B;&#x6CA1;&#x6709;&#x540D;&#x5B57;&#xFF0C;&#x4E2D;&#x65AD;&#x540E;&#x7EED;&#x64CD;&#x4F5C;&#x5219;&#x62A5;&#x9519;</span>
+        <span class="hljs-keyword">elif</span> <span class="hljs-keyword">not</span> getattr(self, <span class="hljs-string">&apos;name&apos;</span>, <span class="hljs-keyword">None</span>):
+            <span class="hljs-keyword">raise</span> ValueError(<span class="hljs-string">&quot;%s must have a name&quot;</span> % type(self).__name__)
+
+        <span class="hljs-comment"># python &#x5BF9;&#x8C61;&#x6216;&#x7C7B;&#x578B;&#x901A;&#x8FC7;&#x5185;&#x7F6E;&#x6210;&#x5458;__dict__&#x6765;&#x5B58;&#x50A8;&#x6210;&#x5458;&#x4FE1;&#x606F;</span>
+        self.__dict__.update(kwargs)
+
+        <span class="hljs-comment">#URL&#x5217;&#x8868;&#x3002;&#x5F53;&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x7684;URL&#x65F6;&#xFF0C;spider&#x5C06;&#x4ECE;&#x8BE5;&#x5217;&#x8868;&#x4E2D;&#x5F00;&#x59CB;&#x8FDB;&#x884C;&#x722C;&#x53D6;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x7B2C;&#x4E00;&#x4E2A;&#x88AB;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x9875;&#x9762;&#x7684;URL&#x5C06;&#x662F;&#x8BE5;&#x5217;&#x8868;&#x4E4B;&#x4E00;&#x3002; &#x540E;&#x7EED;&#x7684;URL&#x5C06;&#x4F1A;&#x4ECE;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x6570;&#x636E;&#x4E2D;&#x63D0;&#x53D6;&#x3002;</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> hasattr(self, <span class="hljs-string">&apos;start_urls&apos;</span>):
+            self.start_urls = []
+
+<span class="hljs-meta">    @property</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">logger</span><span class="hljs-params">(self)</span>:</span>
+        logger = logging.getLogger(self.name)
+        <span class="hljs-keyword">return</span> logging.LoggerAdapter(logger, {<span class="hljs-string">&apos;spider&apos;</span>: self})
+
+    <span class="hljs-comment"># &#x6253;&#x5370;Scrapy&#x6267;&#x884C;&#x540E;&#x7684;log&#x4FE1;&#x606F;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">log</span><span class="hljs-params">(self, message, level=log.DEBUG, **kw)</span>:</span>
+        log.msg(message, spider=self, level=level, **kw)
+
+<span class="hljs-meta">    @classmethod</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">from_crawler</span><span class="hljs-params">(cls, crawler, *args, **kwargs)</span>:</span>
+        spider = cls(*args, **kwargs)
+        spider._set_crawler(crawler)
+        <span class="hljs-keyword">return</span> spider
+
+    <span class="hljs-comment">#&#x5224;&#x65AD;&#x5BF9;&#x8C61;object&#x7684;&#x5C5E;&#x6027;&#x662F;&#x5426;&#x5B58;&#x5728;&#xFF0C;&#x4E0D;&#x5B58;&#x5728;&#x505A;&#x65AD;&#x8A00;&#x5904;&#x7406;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_crawler</span><span class="hljs-params">(self, crawler)</span>:</span>
+        <span class="hljs-keyword">assert</span> <span class="hljs-keyword">not</span> hasattr(self, <span class="hljs-string">&apos;_crawler&apos;</span>), <span class="hljs-string">&quot;Spider already bounded to %s&quot;</span> % crawler
+        self._set_crawler(crawler)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">_set_crawler</span><span class="hljs-params">(self, crawler)</span>:</span>
+        self.crawler = crawler
+        self.settings = crawler.settings
+        crawler.signals.connect(self.close, signals.spider_closed)
+
+    <span class="hljs-comment">#@property</span>
+    <span class="hljs-comment">#def crawler(self):</span>
+    <span class="hljs-comment">#    assert hasattr(self, &apos;_crawler&apos;), &quot;Spider not bounded to any crawler&quot;</span>
+    <span class="hljs-comment">#    return self._crawler</span>
+
+    <span class="hljs-comment">#@property</span>
+    <span class="hljs-comment">#def settings(self):</span>
+    <span class="hljs-comment">#    return self.crawler.settings</span>
+
+    <span class="hljs-comment">#&#x8BE5;&#x65B9;&#x6CD5;&#x5C06;&#x8BFB;&#x53D6;start_urls&#x5185;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x5E76;&#x4E3A;&#x6BCF;&#x4E00;&#x4E2A;&#x5730;&#x5740;&#x751F;&#x6210;&#x4E00;&#x4E2A;Request&#x5BF9;&#x8C61;&#xFF0C;&#x4EA4;&#x7ED9;Scrapy&#x4E0B;&#x8F7D;&#x5E76;&#x8FD4;&#x56DE;Response</span>
+    <span class="hljs-comment">#&#x8BE5;&#x65B9;&#x6CD5;&#x4EC5;&#x8C03;&#x7528;&#x4E00;&#x6B21;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">start_requests</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">for</span> url <span class="hljs-keyword">in</span> self.start_urls:
+            <span class="hljs-keyword">yield</span> self.make_requests_from_url(url)
+
+    <span class="hljs-comment">#start_requests()&#x4E2D;&#x8C03;&#x7528;&#xFF0C;&#x5B9E;&#x9645;&#x751F;&#x6210;Request&#x7684;&#x51FD;&#x6570;&#x3002;</span>
+    <span class="hljs-comment">#Request&#x5BF9;&#x8C61;&#x9ED8;&#x8BA4;&#x7684;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x4E3A;parse()&#xFF0C;&#x63D0;&#x4EA4;&#x7684;&#x65B9;&#x5F0F;&#x4E3A;get</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">make_requests_from_url</span><span class="hljs-params">(self, url)</span>:</span>
+        <span class="hljs-keyword">return</span> Request(url, dont_filter=<span class="hljs-keyword">True</span>)
+
+    <span class="hljs-comment">#&#x9ED8;&#x8BA4;&#x7684;Request&#x5BF9;&#x8C61;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x5904;&#x7406;&#x8FD4;&#x56DE;&#x7684;response&#x3002;</span>
+    <span class="hljs-comment">#&#x751F;&#x6210;Item&#x6216;&#x8005;Request&#x5BF9;&#x8C61;&#x3002;&#x7528;&#x6237;&#x5FC5;&#x987B;&#x5B9E;&#x73B0;&#x8FD9;&#x4E2A;&#x7C7B;</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">parse</span><span class="hljs-params">(self, response)</span>:</span>
+        <span class="hljs-keyword">raise</span> NotImplementedError
+
+<span class="hljs-meta">    @classmethod</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">handles_request</span><span class="hljs-params">(cls, request)</span>:</span>
+        <span class="hljs-keyword">return</span> url_is_from_spider(request.url, cls)
+
+<span class="hljs-meta">    @staticmethod</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">close</span><span class="hljs-params">(spider, reason)</span>:</span>
+        closed = getattr(spider, <span class="hljs-string">&apos;closed&apos;</span>, <span class="hljs-keyword">None</span>)
+        <span class="hljs-keyword">if</span> callable(closed):
+            <span class="hljs-keyword">return</span> closed(reason)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;&lt;%s %r at 0x%0x&gt;&quot;</span> % (type(self).__name__, self.name, id(self))
+
+    __repr__ = __str__
+</code></pre>
+<ul>
+<li><code>Spider</code>&#x7C7B;&#x7EE7;&#x627F;&#x81EA;<code>scrapy.spiders.Spider</code>.</li>
+<li><code>Spider</code>&#x7C7B;&#x8FD9;&#x4E2A;&#x63D0;&#x4F9B;&#x4E86;<code>start_requests()</code>&#x65B9;&#x6CD5;&#x7684;&#x9ED8;&#x8BA4;&#x5B9E;&#x73B0;&#xFF0C;&#x8BFB;&#x53D6;&#x5E76;&#x8BF7;&#x6C42;<code>start_urls</code>&#x5C5E;&#x6027;&#xFF0C;&#x5E76;&#x8C03;&#x7528;<code>parse()</code>&#x65B9;&#x6CD5;&#x89E3;&#x6790;&#x7ED3;&#x679C;&#x3002;</li>
+<li><code>Spider</code>&#x7C7B;&#x7684;&#x5C5E;&#x6027;&#x548C;&#x65B9;&#x6CD5;&#xFF1A;<ul>
+<li><code>name</code>&#xFF1A;&#x722C;&#x866B;&#x540D;&#x79F0;&#xFF0C;&#x5FC5;&#x987B;&#x552F;&#x4E00;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x751F;&#x6210;&#x591A;&#x4E2A;&#x76F8;&#x540C;&#x7684;Spider&#x5B9E;&#x4F8B;&#xFF0C;&#x6570;&#x91CF;&#x6CA1;&#x6709;&#x9650;&#x5236;&#x3002;</li>
+<li><code>allowed_domains</code>: &#x5141;&#x8BB8;&#x722C;&#x53D6;&#x7684;&#x57DF;&#x540D;&#xFF0C;&#x662F;&#x53EF;&#x9009;&#x914D;&#x7F6E;&#xFF0C;&#x4E0D;&#x5728;&#x6B64;&#x8303;&#x56F4;&#x7684;&#x94FE;&#x63A5;&#x4E0D;&#x4F1A;&#x88AB;&#x8DDF;&#x8FDB;&#x722C;&#x53D6;&#x3002;</li>
+<li><code>start_urls</code>: &#x5B83;&#x662F;&#x8D77;&#x59CB;URL&#x5217;&#x8868;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;start_requests()&#x65B9;&#x6CD5;&#x65F6;&#xFF0C;&#x9ED8;&#x8BA4;&#x4F1A;&#x4ECE;&#x8FD9;&#x4E2A;&#x5217;&#x8868;&#x5F00;&#x59CB;&#x6293;&#x53D6;&#x3002;</li>
+<li><code>custom_settings</code>: &#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#xFF0C;&#x4E13;&#x5C5E;&#x4E8E;Spider&#x7684;&#x914D;&#x7F6E;&#xFF0C;&#x6B64;&#x8BBE;&#x7F6E;&#x4F1A;&#x8986;&#x76D6;&#x9879;&#x76EE;&#x5168;&#x5C40;&#x7684;&#x8BBE;&#x7F6E;&#xFF0C;&#x5FC5;&#x987B;&#x5B9A;&#x4E49;&#x6210;&#x7C7B;&#x53D8;&#x91CF;&#x3002;</li>
+<li><code>crawler</code>&#xFF1A;&#x5B83;&#x662F;&#x7531;from_crawler()&#x65B9;&#x6CD5;&#x8BBE;&#x7F6E;&#x7684;&#xFF0C;Crawler&#x5BF9;&#x8C61;&#x5305;&#x542B;&#x4E86;&#x5F88;&#x591A;&#x9879;&#x76EE;&#x7EC4;&#x4EF6;&#xFF0C;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;settings&#x7B49;&#x914D;&#x7F6E;&#x4FE1;&#x606F;&#x3002;</li>
+<li><code>settings</code>: &#x5229;&#x7528;&#x5B83;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x83B7;&#x53D6;&#x9879;&#x76EE;&#x7684;&#x5168;&#x5C40;&#x8BBE;&#x7F6E;&#x53D8;&#x91CF;&#x3002;</li>
+<li><code>start_requests()</code>: &#x4F7F;&#x7528;start_urls&#x91CC;&#x9762;&#x7684;URL&#x6765;&#x6784;&#x9020;Request&#xFF0C;&#x800C;&#x4E14;Request&#x662F;GET&#x8BF7;&#x6C42;&#x65B9;&#x6CD5;&#x3002;</li>
+<li><code>parse()</code>: &#x5F53;Response&#x6CA1;&#x6709;&#x6307;&#x5B9A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#x65F6;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x4F1A;&#x9ED8;&#x8BA4;&#x88AB;&#x8C03;&#x7528;&#x3002;</li>
+<li><code>closed()</code>: &#x5F53;Spider&#x5173;&#x95ED;&#x65F6;&#xFF0C;&#x8BE5;&#x65B9;&#x6CD5;&#x4F1A;&#x8C03;&#x7528;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<h4 id="43-&#x5B9E;&#x6218;&#x6848;&#x4F8B;&#xFF1A;">4.3 &#x5B9E;&#x6218;&#x6848;&#x4F8B;&#xFF1A;</h4>
+<ul>
+<li>&#x4EFB;&#x52A1;&#xFF1A;&#x4F7F;&#x7528;scrapy&#x722C;&#x53D6;&#x5173;&#x952E;&#x5B57;&#x4E3A;<code>python</code>&#x4FE1;&#x606F;&#x7684;&#x767E;&#x5EA6;&#x6587;&#x5E93;&#x641C;&#x7D22;&#x4FE1;&#x606F;&#xFF08;&#x6BCF;&#x9875;10&#x6761;&#x4FE1;&#x606F;&#xFF09;</li>
+<li>url&#x5730;&#x5740;&#x5206;&#x6790;&#xFF1A; <code>https://wenku.baidu.com/search?word=python&amp;pn=0</code> &#x7B2C;&#x4E00;&#x9875; </li>
+<li><p>url&#x5730;&#x5740;&#x5206;&#x6790;&#xFF1A; <code>https://wenku.baidu.com/search?word=python&amp;pn=10</code> &#x7B2C;&#x4E8C;&#x9875; </p>
+</li>
+<li><p>&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#xFF1A;</p>
+</li>
+<li>&#x2460; &#x4F7F;&#x7528;scrapy&#x547D;&#x4EE4;&#x521B;&#x5EFA;&#x722C;&#x866B;&#x9879;&#x76EE;dbwenku</li>
+</ul>
+<pre><code>$ scrapy startproject bdwenku
+</code></pre><ul>
+<li>&#x2461; &#x521B;&#x5EFA;spider&#x722C;&#x866B;&#x6587;&#x4EF6;wenku&#xFF1A;</li>
+</ul>
+<pre><code>$ cd bdwenku
+
+$ scrapy genspider wenku wenku.baidu.com
+</code></pre><ul>
+<li>&#x2462; &#x7F16;&#x8F91;<code>wenku.py</code>&#x722C;&#x866B;&#x6587;&#x4EF6;&#xFF0C;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># -*- coding: utf-8 -*-</span>
+<span class="hljs-keyword">import</span> scrapy
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WenkuSpider</span><span class="hljs-params">(scrapy.Spider)</span>:</span>
+    name = <span class="hljs-string">&apos;wenku&apos;</span>
+    allowed_domains = [<span class="hljs-string">&apos;wenku.baidu.com&apos;</span>]
+    start_urls = [<span class="hljs-string">&apos;https://wenku.baidu.com/search?word=python&amp;pn=0&apos;</span>]
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">parse</span><span class="hljs-params">(self, response)</span>:</span>
+        print(<span class="hljs-string">&quot;Hello Scrapy&quot;</span>)
+        print(response)
+</code></pre>
+<ul>
+<li>&#x2463; &#x8FD0;&#x884C;&#x6D4B;&#x8BD5;&#xFF1A;</li>
+</ul>
+<pre><code> $ scrapy crawl wenku
+</code></pre><ul>
+<li>&#x722C;&#x53D6;&#x6570;&#x636E;&#x51FA;&#x73B0;&#x9519;&#x8BEF;: <code>DEBUG: Forbidden by robots.txt:</code> &#x8BF7;&#x6C42;&#x88AB;&#x62D2;&#x7EDD;&#x4E86;</li>
+<li>&#x4E5F;&#x5C31;&#x662F;&#x767E;&#x5EA6;&#x6587;&#x5E93;&#x7684;robots.txt&#x8BBE;&#x7F6E;&#x4E86;&#x7981;&#x6B62;&#x5916;&#x90E8;&#x722C;&#x53D6;&#x4FE1;&#x606F;&#x3002;</li>
+<li>&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#xFF1A;&#x5728;settings.py&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x5C06;ROBOTSTXT_OBEY&#x7684;&#x503C;&#x8BBE;&#x4E3A;False&#xFF0C;&#x5FFD;&#x7565;robot&#x534F;&#x8BAE;&#xFF0C;&#x7EE7;&#x7EED;&#x722C;&#x53D6;&#x3002;</li>
+</ul>
+<pre><code>...
+2018-05-11 11:00:54 [scrapy.core.engine] INFO: Spider opened
+2018-05-11 11:00:54 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2018-05-11 11:00:54 [scrapy.extensions.telnet] DEBUG: Telnet console listening on 127.0.0.1:6027
+2018-05-11 11:00:56 [scrapy.core.engine] DEBUG: Crawled (200) &lt;GET https://wenku.baidu.com/robots.txt&gt; (referer: None)
+2018-05-11 11:00:56 [scrapy.downloadermiddlewares.robotstxt] DEBUG: Forbidden by robots.txt: &lt;GET https://wenku.baidu.com/search?word=python&amp;pn=0&gt;
+2018-05-11 11:00:56 [scrapy.core.engine] INFO: Closing spider (finished)
+2018-05-11 11:00:56 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{&apos;downloader/exception_count&apos;: 1,
+ &apos;downloader/exception_type_count/scrapy.exceptions.IgnoreRequest&apos;: 1,
+...
+</code></pre><ul>
+<li>&#x2464; Spider&#x722C;&#x866B;&#x6587;&#x4EF6;&#xFF1A;<code>wenku.py</code> &#x7684;&#x51E0;&#x79CD;&#x5199;&#x6CD5;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5355;&#x8BF7;&#x6C42;&#x7684;&#x4FE1;&#x606F;&#x722C;&#x53D6;</span>
+<span class="hljs-comment"># -*- coding: utf-8 -*-</span>
+<span class="hljs-keyword">import</span> scrapy
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WenkuSpider</span><span class="hljs-params">(scrapy.Spider)</span>:</span>
+    name = <span class="hljs-string">&apos;wenku&apos;</span>
+    allowed_domains = [<span class="hljs-string">&apos;wenku.baidu.com&apos;</span>]
+    start_urls = [<span class="hljs-string">&apos;https://wenku.baidu.com/search?word=python&amp;pn=0&apos;</span>]
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">parse</span><span class="hljs-params">(self, response)</span>:</span>
+        dllist = response.selector.xpath(<span class="hljs-string">&quot;//dl&quot;</span>)
+        <span class="hljs-comment">#print(len(dllist))</span>
+        <span class="hljs-keyword">for</span> dd <span class="hljs-keyword">in</span> dllist:
+            print(dd.xpath(<span class="hljs-string">&quot;./dt/p/a/@title&quot;</span>).extract_first())
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x591A;&#x4E2A;&#x8BF7;&#x6C42;&#x7684;&#x4FE1;&#x606F;&#x722C;&#x53D6;</span>
+<span class="hljs-comment"># -*- coding: utf-8 -*-</span>
+<span class="hljs-keyword">import</span> scrapy
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WenkuSpider</span><span class="hljs-params">(scrapy.Spider)</span>:</span>
+    name = <span class="hljs-string">&apos;wenku&apos;</span>
+    allowed_domains = [<span class="hljs-string">&apos;wenku.baidu.com&apos;</span>]
+    start_urls = [<span class="hljs-string">&apos;https://wenku.baidu.com/search?word=python&amp;pn=0&apos;</span>,<span class="hljs-string">&apos;https://wenku.baidu.com/search?word=python&amp;pn=10&apos;</span>,<span class="hljs-string">&apos;https://wenku.baidu.com/search?word=python&amp;pn=20&apos;</span>]
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">parse</span><span class="hljs-params">(self, response)</span>:</span>
+        dllist = response.selector.xpath(<span class="hljs-string">&quot;//dl&quot;</span>)
+        <span class="hljs-comment">#print(len(dllist))</span>
+        <span class="hljs-keyword">for</span> dd <span class="hljs-keyword">in</span> dllist:
+            print(dd.xpath(<span class="hljs-string">&quot;./dt/p/a/@title&quot;</span>).extract_first())
+
+        print(<span class="hljs-string">&quot;=&quot;</span>*<span class="hljs-number">70</span>) <span class="hljs-comment">#&#x8F93;&#x51FA;&#x4E00;&#x6761;&#x6BCF;&#x4E2A;&#x8BF7;&#x6C42;&#x540E;&#x5206;&#x5272;&#x7EBF;</span>
+</code></pre>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x722C;&#x53D6;&#x5FAA;&#x73AF;&#xFF0C;&#x83B7;&#x53D6;10&#x9875;&#x4FE1;&#x606F;</span>
+<span class="hljs-comment"># -*- coding: utf-8 -*-</span>
+<span class="hljs-keyword">import</span> scrapy
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">WenkuSpider</span><span class="hljs-params">(scrapy.Spider)</span>:</span>
+    name = <span class="hljs-string">&apos;wenku&apos;</span>
+    allowed_domains = [<span class="hljs-string">&apos;wenku.baidu.com&apos;</span>]
+    start_urls = [<span class="hljs-string">&apos;https://wenku.baidu.com/search?word=python&amp;pn=0&apos;</span>]
+    p=<span class="hljs-number">0</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">parse</span><span class="hljs-params">(self, response)</span>:</span>
+        dllist = response.selector.xpath(<span class="hljs-string">&quot;//dl&quot;</span>)
+        <span class="hljs-comment">#print(len(dllist))</span>
+        <span class="hljs-keyword">for</span> dd <span class="hljs-keyword">in</span> dllist:
+            print(dd.xpath(<span class="hljs-string">&quot;./dt/p/a/@title&quot;</span>).extract_first())
+
+        print(<span class="hljs-string">&quot;=&quot;</span>*<span class="hljs-number">70</span>)
+
+        self.p += <span class="hljs-number">1</span>
+        <span class="hljs-keyword">if</span> self.p &lt; <span class="hljs-number">10</span>:
+            next_url = <span class="hljs-string">&apos;https://wenku.baidu.com/search?word=python&amp;pn=&apos;</span>+str(self.p*<span class="hljs-number">10</span>)
+            url = response.urljoin(next_url) <span class="hljs-comment">#&#x6784;&#x5EFA;&#x7EDD;&#x5BF9;url&#x5730;&#x5740;&#xFF08;&#x8FD9;&#x91CC;&#x53EF;&#x7701;&#x7565;&#xFF09;</span>
+            <span class="hljs-keyword">yield</span> scrapy.Request(url=url,callback=self.parse)
+</code></pre>
+<pre><code class="lang-&#x7ED3;&#x679C;">python
+python&#x6559;&#x7A0B;
+PYTHON&#x6D4B;&#x8BD5;&#x9898;
+&#x7B80;&#x660E;_Python_&#x6559;&#x7A0B;
+&#x5982;&#x4F55;&#x81EA;&#x5B66; Python(&#x5E72;&#x8D27;&#x5408;&#x96C6;)
+python
+python
+Python&#x4ECB;&#x7ECD;(Introduction to Python)
+Python&#x7F16;&#x7A0B;&#x5165;&#x95E8;(&#x9002;&#x5408;&#x4E8E;&#x96F6;&#x57FA;&#x7840;&#x670B;&#x53CB;)
+Python&#x6559;&#x7A0B;
+======================================================================
+python
+&#x5341;&#x5206;&#x949F;&#x5B66;&#x4F1A;Python
+Python &#x57FA;&#x7840;&#x8BED;&#x6CD5;(&#x4E00;)
+python&#x57FA;&#x7840;&#x5206;&#x4EAB;
+Python&#x5165;&#x95E8;
+python&#x65B0;&#x624B;&#x6559;&#x7A0B;
+python&#x8D44;&#x6E90;&#x4E2D;&#x6587;&#x5927;&#x5168;
+python_&#x7B14;&#x8BB0;
+Python&#x4E0E;&#x4E2D;&#x6587;&#x5904;&#x7406;
+python
+======================================================================
+python
+python&#x6559;&#x7A0B;
+PYTHON&#x6D4B;&#x8BD5;&#x9898;
+&#x7B80;&#x660E;_Python_&#x6559;&#x7A0B;
+&#x5982;&#x4F55;&#x81EA;&#x5B66; Python(&#x5E72;&#x8D27;&#x5408;&#x96C6;)
+python
+python
+Python&#x4ECB;&#x7ECD;(Introduction to Python)
+Python&#x7F16;&#x7A0B;&#x5165;&#x95E8;(&#x9002;&#x5408;&#x4E8E;&#x96F6;&#x57FA;&#x7840;&#x670B;&#x53CB;)
+Python&#x6559;&#x7A0B;
+======================================================================
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3.html" class="navigation navigation-prev " aria-label="Previous page: 3. Selector选择器">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="5.html" class="navigation navigation-next " aria-label="Next page: 5. Downloader Middleware的使用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4. Spider的使用","level":"1.3.4","depth":2,"next":{"title":"5. Downloader Middleware的使用","level":"1.3.5","depth":2,"path":"week01/5.md","ref":"week01/5.md","articles":[]},"previous":{"title":"3. Selector选择器","level":"1.3.3","depth":2,"path":"week01/3.md","ref":"week01/3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"week01/4.md","mtime":"2018-05-11T06:54:25.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-12T06:55:54.323Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

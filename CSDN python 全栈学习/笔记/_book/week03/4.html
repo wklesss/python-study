@@ -1,0 +1,827 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>21. 从API爬取天气预报数据 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="5.html" />
+    
+    
+    <link rel="prev" href="3.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../week01/">
+            
+                <a href="../week01/">
+            
+                    
+                    一、Python网络爬虫进阶实战(上)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../week01/1.html">
+            
+                <a href="../week01/1.html">
+            
+                    
+                    1. Scrapy框架介绍与安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../week01/2.html">
+            
+                <a href="../week01/2.html">
+            
+                    
+                    2. Scrapy框架的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../week01/3.html">
+            
+                <a href="../week01/3.html">
+            
+                    
+                    3. Selector选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../week01/4.html">
+            
+                <a href="../week01/4.html">
+            
+                    
+                    4. Spider的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../week01/5.html">
+            
+                <a href="../week01/5.html">
+            
+                    
+                    5. Downloader Middleware的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../week01/6.html">
+            
+                <a href="../week01/6.html">
+            
+                    
+                    6. Spider Middleware的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../week01/7.html">
+            
+                <a href="../week01/7.html">
+            
+                    
+                    7. ItemPipeline的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../week01/8.html">
+            
+                <a href="../week01/8.html">
+            
+                    
+                    8. Scrapy爬虫案例实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../week01/9.html">
+            
+                <a href="../week01/9.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../week02/">
+            
+                <a href="../week02/">
+            
+                    
+                    二、Python网络爬虫进阶实战(中)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../week02/1.html">
+            
+                <a href="../week02/1.html">
+            
+                    
+                    09. Selenium的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../week02/2.html">
+            
+                <a href="../week02/2.html">
+            
+                    
+                    10. Selenium爬取淘宝商品
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../week02/3.html">
+            
+                <a href="../week02/3.html">
+            
+                    
+                    11. MongoDB数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../week02/4.html">
+            
+                <a href="../week02/4.html">
+            
+                    
+                    12. Scrapy框架使用Selenium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../week02/5.html">
+            
+                <a href="../week02/5.html">
+            
+                    
+                    13. 代理的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../week02/6.html">
+            
+                <a href="../week02/6.html">
+            
+                    
+                    14. 使用代理爬取信息实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../week02/7.html">
+            
+                <a href="../week02/7.html">
+            
+                    
+                    15. Redis数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../week02/8.html">
+            
+                <a href="../week02/8.html">
+            
+                    
+                    16. 分布式爬虫原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../week02/9.html">
+            
+                <a href="../week02/9.html">
+            
+                    
+                    17. Scrapy分布式实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../week02/10.html">
+            
+                <a href="../week02/10.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    三、Python网络爬虫进阶实战(下)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    18. App的信息爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    19. mitmproxy的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    20. App信息抓取实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    21. 从API爬取天气预报数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    22. 滑动验证码的识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    23. 爬虫项目需求分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    24. 爬虫项目架构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    25. 爬虫项目的代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    26. 使用web展示爬取信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >21. 从API爬取天气预报数据</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="21-&#x7528;api&#x722C;&#x53D6;&#x5929;&#x6C14;&#x9884;&#x62A5;&#x6570;&#x636E;">21. &#x7528;API&#x722C;&#x53D6;&#x5929;&#x6C14;&#x9884;&#x62A5;&#x6570;&#x636E;</h1>
+<h3 id="211-&#x6CE8;&#x518C;&#x514D;&#x8D39;api&#x548C;&#x9605;&#x8BFB;&#x6587;&#x6863;">21.1 &#x6CE8;&#x518C;&#x514D;&#x8D39;API&#x548C;&#x9605;&#x8BFB;&#x6587;&#x6863;</h3>
+<ul>
+<li><p>&#x672C;&#x8282;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;API&#x63A5;&#x53E3;(&#x548C;&#x98CE;&#x5929;&#x6C14;&#x9884;&#x62A5;)&#x722C;&#x53D6;&#x5929;&#x6C14;&#x4FE1;&#x606F;&#xFF0C;&#x8BE5;&#x63A5;&#x53E3;&#x4E3A;&#x4E2A;&#x4EBA;&#x5F00;&#x53D1;&#x8005;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x514D;&#x8D39;&#x7684;&#x9884;&#x62A5;&#x6570;&#x636E;&#xFF08;&#x6709;&#x6B21;&#x6570;&#x9650;&#x5236;&#xFF09;&#x3002;</p>
+</li>
+<li><p>&#x9996;&#x5148;&#x8BBF;&#x95EE;&#x548C;&#x98CE;&#x5929;&#x6C14;&#x7F51;&#xFF0C;&#x6CE8;&#x518C;&#x4E00;&#x4E2A;&#x8D26;&#x6237;&#x3002;&#x6CE8;&#x518C;&#x5730;&#x5740;&#xFF1A;<a href="https://console.heweather.com/" target="_blank">https://console.heweather.com/</a></p>
+</li>
+</ul>
+<p><img src="../images/week03/api01.png" alt="">  </p>
+<ul>
+<li>&#x5728;&#x767B;&#x9646;&#x540E;&#x7684;&#x63A7;&#x5236;&#x53F0;&#x4E2D;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4E2A;&#x4EBA;&#x8BA4;&#x8BC1;&#x7684;key(&#x5BC6;&#x94A5;)&#xFF0C;&#x8FD9;&#x4E2A;key&#x5C31;&#x662F;&#x8BBF;&#x95EE;API&#x63A5;&#x53E3;&#x7684;&#x94A5;&#x5319;&#x3002;</li>
+</ul>
+<p><img src="../images/week03/api02.png" alt="">  </p>
+<ul>
+<li>&#x83B7;&#x53D6;key&#x4E4B;&#x540E;&#x9605;&#x8BFB;API&#x6587;&#x6863;&#xFF1A;<a href="https://www.heweather.com/documents/api/s6" target="_blank">https://www.heweather.com/documents/api/s6</a></li>
+</ul>
+<p><img src="../images/week03/api03.png" alt=""></p>
+<h3 id="212-&#x63D0;&#x53D6;&#x5168;&#x56FD;&#x57CE;&#x5E02;&#x4FE1;&#x606F;">21.2 &#x63D0;&#x53D6;&#x5168;&#x56FD;&#x57CE;&#x5E02;&#x4FE1;&#x606F;</h3>
+<ul>
+<li>&#x901A;&#x8FC7;API&#x63A5;&#x53E3;&#x63D0;&#x53D6;<code>3181</code>&#x4E2A;&#x57CE;&#x5E02;&#x4FE1;&#x606F;&#x3002;URL&#x5730;&#x5740;&#xFF1A;<code>https://cdn.heweather.com/china-city-list.txt</code></li>
+</ul>
+<p><img src="../images/week03/api05.png" alt=""></p>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x4ECE;&#x7F51;&#x4E0A;&#x8BFB;&#x53D6;&#x57CE;&#x5E02;&#x5217;&#x8868;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x4F7F;&#x7528;&#x6B63;&#x5219;&#x5C06;&#x6570;&#x636E;&#x89E3;&#x6790;&#x51FA;&#x6765;&#x3002;</span>
+<span class="hljs-keyword">import</span> requests
+<span class="hljs-keyword">import</span> re
+
+<span class="hljs-comment"># &#x722C;&#x53D6;&#x57CE;&#x5E02;&#x4FE1;&#x606F;&#x5217;&#x8868;</span>
+url = <span class="hljs-string">&quot;https://cdn.heweather.com/china-city-list.txt&quot;</span>
+res = requests.get(url)
+data = res.content.decode(<span class="hljs-string">&apos;utf-8&apos;</span>)
+
+<span class="hljs-comment"># &#x4F7F;&#x7528;&#x6362;&#x884C;&#x7B26;&#x62C6;&#x5206;&#x51FA;&#x6BCF;&#x4E00;&#x6761;&#x57CE;&#x5E02;&#x4FE1;&#x606F;&#x6570;&#x636E;</span>
+dlist = re.split(<span class="hljs-string">&apos;[\n\r]+&apos;</span>,data)
+
+<span class="hljs-comment"># &#x5254;&#x9664;&#x524D;&#x4E24;&#x6761;&#x65E0;&#x7528;&#x7684;&#x6570;&#x636E;</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
+    dlist.remove(dlist[<span class="hljs-number">0</span>])
+<span class="hljs-comment"># &#x8F93;&#x51FA;&#x57CE;&#x5E02;&#x4FE1;&#x606F;&#x6761;&#x6570;</span>
+print(len(dlist))
+
+<span class="hljs-comment"># &#x8F93;&#x51FA;&#x524D;20&#x6761;&#x4FE1;&#x606F;</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">20</span>):
+    <span class="hljs-comment">#&#x4F7F;&#x7528;&#x7A7A;&#x767D;&#x7B26;&#x62C6;&#x5206;&#x51FA;&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x4FE1;&#x606F;</span>
+    item = re.split(<span class="hljs-string">&quot;\s+&quot;</span>,dlist[i])
+    <span class="hljs-comment">#&#x8F93;&#x51FA;</span>
+    <span class="hljs-comment">#print(item)</span>
+    print(item[<span class="hljs-number">0</span>],<span class="hljs-string">&quot;:&quot;</span>,item[<span class="hljs-number">2</span>])
+</code></pre>
+<h3 id="213-&#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x57CE;&#x5E02;&#x7684;&#x5929;&#x6C14;&#x4FE1;&#x606F;">21.3 &#x83B7;&#x53D6;&#x6307;&#x5B9A;&#x57CE;&#x5E02;&#x7684;&#x5929;&#x6C14;&#x4FE1;&#x606F;</h3>
+<ul>
+<li><p>&#x6B64;&#x6587;&#x6863;&#xFF1A;<a href="https://www.heweather.com/documents/api/s6/weather" target="_blank">https://www.heweather.com/documents/api/s6/weather</a></p>
+</li>
+<li><p>&#x514D;&#x8D39;&#x83B7;&#x53D6;&#x5929;&#x6C14;&#x4FE1;&#x606F;&#x63A5;&#x53E3;&#x5730;&#x5740;&#xFF1A;<a href="https://free-api.heweather.com/s6/weather?location=&#x57CE;&#x5E02;&amp;key=&#x7528;&#x6237;&#x8BA4;&#x8BC1;key" target="_blank">https://free-api.heweather.com/s6/weather?location=&#x57CE;&#x5E02;&amp;key=&#x7528;&#x6237;&#x8BA4;&#x8BC1;key</a></p>
+</li>
+</ul>
+<p><img src="../images/week03/api04.png" alt=""></p>
+<ul>
+<li>&#x6293;&#x53D6;&#x6307;&#x5B9A;&#x57CE;&#x5E02;&#x5929;&#x6C14;&#x4FE1;&#x606F;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> requests
+<span class="hljs-keyword">import</span> time
+
+<span class="hljs-comment">#&#x722C;&#x53D6;&#x6307;&#x5B9A;&#x57CE;&#x5E02;&#x7684;&#x5929;&#x6C14;&#x4FE1;&#x606F;</span>
+url = <span class="hljs-string">&quot;https://free-api.heweather.com/s6/weather?location=&#x5317;&#x4EAC;&amp;key=a46fd5c4f1b54fda9ee71ba6711f09cd&quot;</span>
+res = requests.get(url)
+time.sleep(<span class="hljs-number">2</span>)
+<span class="hljs-comment">#&#x89E3;&#x6790;json&#x6570;&#x636E;</span>
+dlist = res.json()
+data = dlist[<span class="hljs-string">&apos;HeWeather6&apos;</span>][<span class="hljs-number">0</span>]
+<span class="hljs-comment">#&#x8F93;&#x51FA;&#x90E8;&#x5206;&#x5929;&#x6C14;&#x4FE1;&#x606F;</span>
+print(<span class="hljs-string">&quot;&#x57CE;&#x5E02;&#xFF1A;&quot;</span>,data[<span class="hljs-string">&apos;basic&apos;</span>][<span class="hljs-string">&apos;location&apos;</span>])
+print(<span class="hljs-string">&quot;&#x4ECA;&#x65E5;&#xFF1A;&quot;</span>,str(data[<span class="hljs-string">&apos;daily_forecast&apos;</span>][<span class="hljs-number">0</span>][<span class="hljs-string">&apos;date&apos;</span>]))
+print(<span class="hljs-string">&quot;&#x6E29;&#x5EA6;&#xFF1A;&quot;</span>,data[<span class="hljs-string">&apos;daily_forecast&apos;</span>][<span class="hljs-number">0</span>][<span class="hljs-string">&apos;tmp_min&apos;</span>],<span class="hljs-string">&quot;~&quot;</span>,data[<span class="hljs-string">&apos;daily_forecast&apos;</span>][<span class="hljs-number">0</span>][<span class="hljs-string">&apos;tmp_max&apos;</span>])
+print(data[<span class="hljs-string">&apos;daily_forecast&apos;</span>][<span class="hljs-number">0</span>][<span class="hljs-string">&apos;cond_txt_d&apos;</span>],<span class="hljs-string">&quot; ~ &quot;</span>,data[<span class="hljs-string">&apos;daily_forecast&apos;</span>][<span class="hljs-number">0</span>][<span class="hljs-string">&apos;cond_txt_n&apos;</span>])
+print(data[<span class="hljs-string">&apos;daily_forecast&apos;</span>][<span class="hljs-number">0</span>][<span class="hljs-string">&apos;wind_dir&apos;</span>],data[<span class="hljs-string">&apos;daily_forecast&apos;</span>][<span class="hljs-number">0</span>][<span class="hljs-string">&apos;wind_sc&apos;</span>],<span class="hljs-string">&apos;&#x7EA7;&apos;</span>)
+</code></pre>
+<ul>
+<li>&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#xFF1A;</li>
+</ul>
+<pre><code>&#x57CE;&#x5E02;&#xFF1A; &#x5317;&#x4EAC;
+&#x4ECA;&#x65E5;&#xFF1A; 2018-06-13
+&#x6E29;&#x5EA6;&#xFF1A; 18 ~ 28
+&#x96F7;&#x9635;&#x96E8;  ~  &#x591A;&#x4E91;
+&#x4E1C;&#x5317;&#x98CE; 1-2 &#x7EA7;
+</code></pre><h3 id="214-&#x7EFC;&#x5408;&#x5B9E;&#x4F8B;">21.4 &#x7EFC;&#x5408;&#x5B9E;&#x4F8B;</h3>
+<ul>
+<li>&#x83B7;&#x53D6;&#x57CE;&#x5E02;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x4FE1;&#x606F;&#x83B7;&#x53D6;&#x5BF9;&#x5E94;&#x7684;&#x5929;&#x6C14;&#x4FE1;&#x606F;&#x3002;</li>
+</ul>
+<pre><code class="lang-python"><span class="hljs-comment"># &#x4ECE;&#x7F51;&#x4E0A;&#x8BFB;&#x53D6;&#x57CE;&#x5E02;&#x5217;&#x8868;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x904D;&#x5386;&#x90E8;&#x5206;&#x57CE;&#x5E02;&#x4FE1;&#x606F;&#xFF0C;&#x4ECE;API&#x63A5;&#x53E3;&#x4E2D;&#x722C;&#x53D6;&#x5929;&#x6C14;&#x4FE1;&#x606F;&#x3002;</span>
+<span class="hljs-keyword">import</span> requests
+<span class="hljs-keyword">import</span> re
+<span class="hljs-keyword">import</span> time
+
+<span class="hljs-comment"># &#x722C;&#x53D6;&#x57CE;&#x5E02;&#x4FE1;&#x606F;&#x5217;&#x8868;</span>
+url = <span class="hljs-string">&quot;https://cdn.heweather.com/china-city-list.txt&quot;</span>
+res = requests.get(url)
+data = res.content.decode(<span class="hljs-string">&apos;utf-8&apos;</span>)
+
+<span class="hljs-comment"># &#x4F7F;&#x7528;&#x6362;&#x884C;&#x7B26;&#x62C6;&#x5206;&#x51FA;&#x6BCF;&#x4E00;&#x6761;&#x57CE;&#x5E02;&#x4FE1;&#x606F;&#x6570;&#x636E;</span>
+dlist = re.split(<span class="hljs-string">&apos;[\n\r]+&apos;</span>,data)
+
+<span class="hljs-comment"># &#x5254;&#x9664;&#x524D;&#x4E24;&#x6761;&#x65E0;&#x7528;&#x7684;&#x6570;&#x636E;</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">2</span>):
+    dlist.remove(dlist[<span class="hljs-number">0</span>])
+<span class="hljs-comment"># &#x8F93;&#x51FA;&#x57CE;&#x5E02;&#x4FE1;&#x606F;&#x6761;&#x6570;</span>
+print(len(dlist))
+
+<span class="hljs-comment"># &#x8F93;&#x51FA;&#x524D;10&#x6761;&#x4FE1;&#x606F;</span>
+<span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(<span class="hljs-number">10</span>):
+    <span class="hljs-comment">#&#x4F7F;&#x7528;&#x7A7A;&#x767D;&#x7B26;&#x62C6;&#x5206;&#x51FA;&#x6BCF;&#x4E2A;&#x5B57;&#x6BB5;&#x4FE1;&#x606F;</span>
+    item = re.split(<span class="hljs-string">&quot;\s+&quot;</span>,dlist[i])
+    <span class="hljs-comment">#&#x8F93;&#x51FA;</span>
+    <span class="hljs-comment">#print(item)</span>
+    <span class="hljs-comment">#print(item[0],&quot;:&quot;,item[2])</span>
+    <span class="hljs-comment">#&#x722C;&#x53D6;&#x6307;&#x5B9A;&#x57CE;&#x5E02;&#x7684;&#x5929;&#x6C14;&#x4FE1;&#x606F;</span>
+    url = <span class="hljs-string">&quot;https://free-api.heweather.com/s6/weather?location=%s&amp;key=a46fd5c4f1b54fda9ee71ba6711f09cd&quot;</span>%(item[<span class="hljs-number">0</span>])
+    res = requests.get(url)
+    time.sleep(<span class="hljs-number">2</span>)
+    <span class="hljs-comment">#&#x89E3;&#x6790;json&#x6570;&#x636E;</span>
+    datalist = res.json()
+    data = datalist[<span class="hljs-string">&apos;HeWeather6&apos;</span>][<span class="hljs-number">0</span>]
+    <span class="hljs-comment">#&#x8F93;&#x51FA;&#x90E8;&#x5206;&#x5929;&#x6C14;&#x4FE1;&#x606F;</span>
+    print(<span class="hljs-string">&quot;&#x57CE;&#x5E02;&#xFF1A;&quot;</span>,data[<span class="hljs-string">&apos;basic&apos;</span>][<span class="hljs-string">&apos;location&apos;</span>])
+    print(<span class="hljs-string">&quot;&#x4ECA;&#x65E5;&#xFF1A;&quot;</span>,str(data[<span class="hljs-string">&apos;daily_forecast&apos;</span>][<span class="hljs-number">0</span>][<span class="hljs-string">&apos;date&apos;</span>]))
+    print(<span class="hljs-string">&quot;&#x6E29;&#x5EA6;&#xFF1A;&quot;</span>,data[<span class="hljs-string">&apos;daily_forecast&apos;</span>][<span class="hljs-number">0</span>][<span class="hljs-string">&apos;tmp_min&apos;</span>],<span class="hljs-string">&quot;~&quot;</span>,data[<span class="hljs-string">&apos;daily_forecast&apos;</span>][<span class="hljs-number">0</span>][<span class="hljs-string">&apos;tmp_max&apos;</span>])
+    print(data[<span class="hljs-string">&apos;daily_forecast&apos;</span>][<span class="hljs-number">0</span>][<span class="hljs-string">&apos;cond_txt_d&apos;</span>],<span class="hljs-string">&quot; . &quot;</span>,data[<span class="hljs-string">&apos;daily_forecast&apos;</span>][<span class="hljs-number">0</span>][<span class="hljs-string">&apos;cond_txt_n&apos;</span>])
+    print(data[<span class="hljs-string">&apos;daily_forecast&apos;</span>][<span class="hljs-number">0</span>][<span class="hljs-string">&apos;wind_dir&apos;</span>],data[<span class="hljs-string">&apos;daily_forecast&apos;</span>][<span class="hljs-number">0</span>][<span class="hljs-string">&apos;wind_sc&apos;</span>],<span class="hljs-string">&apos;&#x7EA7;&apos;</span>)
+    print(<span class="hljs-string">&quot;=&quot;</span>*<span class="hljs-number">70</span>)
+</code></pre>
+<ul>
+<li>&#x7ED3;&#x679C;&#xFF1A;</li>
+</ul>
+<pre><code>3181
+&#x57CE;&#x5E02;&#xFF1A; &#x5317;&#x4EAC;
+&#x4ECA;&#x65E5;&#xFF1A; 2018-06-13
+&#x6E29;&#x5EA6;&#xFF1A; 18 ~ 28
+&#x96F7;&#x9635;&#x96E8;  .  &#x591A;&#x4E91;
+&#x4E1C;&#x5317;&#x98CE; 1-2 &#x7EA7;
+======================================================================
+&#x57CE;&#x5E02;&#xFF1A; &#x6D77;&#x6DC0;
+&#x4ECA;&#x65E5;&#xFF1A; 2018-06-14
+&#x6E29;&#x5EA6;&#xFF1A; 18 ~ 30
+&#x591A;&#x4E91;  .  &#x591A;&#x4E91;
+&#x5357;&#x98CE; 1-2 &#x7EA7;
+======================================================================
+&#x57CE;&#x5E02;&#xFF1A; &#x671D;&#x9633;
+... ...
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="3.html" class="navigation navigation-prev " aria-label="Previous page: 20. App信息抓取实战">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="5.html" class="navigation navigation-next " aria-label="Next page: 22. 滑动验证码的识别">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"21. 从API爬取天气预报数据","level":"1.5.4","depth":2,"next":{"title":"22. 滑动验证码的识别","level":"1.5.5","depth":2,"path":"week03/5.md","ref":"week03/5.md","articles":[]},"previous":{"title":"20. App信息抓取实战","level":"1.5.3","depth":2,"path":"week03/3.md","ref":"week03/3.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"week03/4.md","mtime":"2018-06-14T03:38:06.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-12T06:55:54.323Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

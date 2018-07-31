@@ -1,0 +1,1132 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>22. 滑动验证码的识别 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="6.html" />
+    
+    
+    <link rel="prev" href="4.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../week01/">
+            
+                <a href="../week01/">
+            
+                    
+                    一、Python网络爬虫进阶实战(上)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../week01/1.html">
+            
+                <a href="../week01/1.html">
+            
+                    
+                    1. Scrapy框架介绍与安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../week01/2.html">
+            
+                <a href="../week01/2.html">
+            
+                    
+                    2. Scrapy框架的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../week01/3.html">
+            
+                <a href="../week01/3.html">
+            
+                    
+                    3. Selector选择器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../week01/4.html">
+            
+                <a href="../week01/4.html">
+            
+                    
+                    4. Spider的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../week01/5.html">
+            
+                <a href="../week01/5.html">
+            
+                    
+                    5. Downloader Middleware的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../week01/6.html">
+            
+                <a href="../week01/6.html">
+            
+                    
+                    6. Spider Middleware的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../week01/7.html">
+            
+                <a href="../week01/7.html">
+            
+                    
+                    7. ItemPipeline的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../week01/8.html">
+            
+                <a href="../week01/8.html">
+            
+                    
+                    8. Scrapy爬虫案例实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../week01/9.html">
+            
+                <a href="../week01/9.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../week02/">
+            
+                <a href="../week02/">
+            
+                    
+                    二、Python网络爬虫进阶实战(中)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../week02/1.html">
+            
+                <a href="../week02/1.html">
+            
+                    
+                    09. Selenium的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../week02/2.html">
+            
+                <a href="../week02/2.html">
+            
+                    
+                    10. Selenium爬取淘宝商品
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../week02/3.html">
+            
+                <a href="../week02/3.html">
+            
+                    
+                    11. MongoDB数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../week02/4.html">
+            
+                <a href="../week02/4.html">
+            
+                    
+                    12. Scrapy框架使用Selenium
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../week02/5.html">
+            
+                <a href="../week02/5.html">
+            
+                    
+                    13. 代理的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../week02/6.html">
+            
+                <a href="../week02/6.html">
+            
+                    
+                    14. 使用代理爬取信息实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.7" data-path="../week02/7.html">
+            
+                <a href="../week02/7.html">
+            
+                    
+                    15. Redis数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.8" data-path="../week02/8.html">
+            
+                <a href="../week02/8.html">
+            
+                    
+                    16. 分布式爬虫原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.9" data-path="../week02/9.html">
+            
+                <a href="../week02/9.html">
+            
+                    
+                    17. Scrapy分布式实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.10" data-path="../week02/10.html">
+            
+                <a href="../week02/10.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    三、Python网络爬虫进阶实战(下)
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="1.html">
+            
+                <a href="1.html">
+            
+                    
+                    18. App的信息爬取
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="2.html">
+            
+                <a href="2.html">
+            
+                    
+                    19. mitmproxy的使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="3.html">
+            
+                <a href="3.html">
+            
+                    
+                    20. App信息抓取实战
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="4.html">
+            
+                <a href="4.html">
+            
+                    
+                    21. 从API爬取天气预报数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5.5" data-path="5.html">
+            
+                <a href="5.html">
+            
+                    
+                    22. 滑动验证码的识别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="6.html">
+            
+                <a href="6.html">
+            
+                    
+                    23. 爬虫项目需求分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="7.html">
+            
+                <a href="7.html">
+            
+                    
+                    24. 爬虫项目架构设计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="8.html">
+            
+                <a href="8.html">
+            
+                    
+                    25. 爬虫项目的代码实现
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="9.html">
+            
+                <a href="9.html">
+            
+                    
+                    26. 使用web展示爬取信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="10.html">
+            
+                <a href="10.html">
+            
+                    
+                    本周作业
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >22. 滑动验证码的识别</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="22-&#x6781;&#x9A8C;&#x6ED1;&#x52A8;&#x9A8C;&#x8BC1;&#x7801;&#x7684;&#x8BC6;&#x522B;">22. &#x6781;&#x9A8C;&#x6ED1;&#x52A8;&#x9A8C;&#x8BC1;&#x7801;&#x7684;&#x8BC6;&#x522B;</h1>
+<h3 id="221-&#x6ED1;&#x52A8;&#x9A8C;&#x8BC1;&#x7801;&#x7684;&#x8BC6;&#x522B;&#x4ECB;&#x7ECD;">22.1 &#x6ED1;&#x52A8;&#x9A8C;&#x8BC1;&#x7801;&#x7684;&#x8BC6;&#x522B;&#x4ECB;&#x7ECD;</h3>
+<ul>
+<li>&#x672C;&#x8282;&#x76EE;&#x6807;&#xFF1A;&#x7528;&#x7A0B;&#x5E8F;&#x8BC6;&#x522B;&#x6781;&#x9A8C;&#x6ED1;&#x52A8;&#x9A8C;&#x8BC1;&#x7801;&#x7684;&#x9A8C;&#x8BC1;&#xFF0C;&#x5305;&#x62EC;&#x5206;&#x6790;&#x8BC6;&#x522B;&#x601D;&#x8DEF;&#x3001;&#x8BC6;&#x522B;&#x7F3A;&#x53E3;&#x4F4D;&#x7F6E;&#x3001;&#x751F;&#x6210;&#x6ED1;&#x5757;&#x62D6;&#x52A8;&#x8DEF;&#x5F84;&#x3001;&#x6A21;&#x62DF;&#x5B9E;&#x73B0;&#x6ED1;&#x5757;&#x62FC;&#x5408;&#x901A;&#x8FC7;&#x9A8C;&#x8BC1;&#x7B49;&#x6B65;&#x9AA4;&#x3002;</li>
+<li>&#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#xFF1A;&#x672C;&#x6B21;&#x6848;&#x4F8B;&#x6211;&#x4EEC;&#x4F7F;&#x7528;Python&#x5E93;&#x662F;Selenium&#xFF0C;&#x6D4F;&#x89C8;&#x5668;&#x4E3A;Chrome&#x3002;&#x8BF7;&#x786E;&#x4FDD;&#x5DF2;&#x5B89;&#x88C5;Selenium&#x5E93;&#x548C;ChromeDriver&#x6D4F;&#x89C8;&#x5668;&#x9A71;&#x52A8;&#x3002;</li>
+<li>&#x4E86;&#x89E3;&#x6781;&#x9A8C;&#x6ED1;&#x52A8;&#x9A8C;&#x8BC1;&#x7801;&#xFF1A;<ul>
+<li>&#x6781;&#x9A8C;&#x6ED1;&#x52A8;&#x9A8C;&#x8BC1;&#x7801;&#x5B98;&#x7F51;&#x4E3A;&#xFF1A;<a href="http://www.geetest.com/" target="_blank">http://www.geetest.com/</a></li>
+<li>&#x9A8C;&#x8BC1;&#x65B9;&#x5F0F;&#x4E3A;&#x62D6;&#x52A8;&#x6ED1;&#x5757;&#x62FC;&#x5408;&#x56FE;&#x50CF;&#xFF0C;&#x82E5;&#x56FE;&#x50CF;&#x5B8C;&#x5168;&#x62FC;&#x5408;&#xFF0C;&#x5219;&#x9A8C;&#x8BC1;&#x6210;&#x529F;&#xFF0C;&#x5426;&#x5219;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x9A8C;&#x8BC1;&#xFF0C;&#x5982;&#x56FE;&#x6240;&#x793A;&#xFF1A;</li>
+</ul>
+</li>
+</ul>
+<p><img src="../images/week03/code.png" alt="">   </p>
+<ul>
+<li>&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x94FE;&#x63A5;&#x5730;&#x5740;&#xFF1A;<code>https://account.geetest.com/login</code>&#xFF0C;&#x6253;&#x5F00;&#x6781;&#x9A8C;&#x7684;&#x7BA1;&#x7406;&#x540E;&#x53F0;&#x767B;&#x5F55;&#x9875;&#x9762;&#xFF0C;&#x5B8C;&#x6210;&#x81EA;&#x52A8;&#x5316;&#x767B;&#x5F55;&#x64CD;&#x4F5C;&#x3002;</li>
+</ul>
+<h3 id="222-&#x5B9E;&#x73B0;&#x6B65;&#x9AA4;&#xFF1A;">22.2 &#x5B9E;&#x73B0;&#x6B65;&#x9AA4;&#xFF1A;</h3>
+<h4 id="&#x2460;-&#x521D;&#x59CB;&#x5316;">&#x2460; &#x521D;&#x59CB;&#x5316;</h4>
+<ul>
+<li>&#x521D;&#x59CB;&#x5316;&#x94FE;&#x63A5;&#x5730;&#x5740;&#x3001;&#x521B;&#x5EFA;&#x6A21;&#x62DF;&#x6D4F;&#x89C8;&#x5668;&#x5BF9;&#x8C61;&#x3001;&#x8BBE;&#x7F6E;&#x767B;&#x5F55;&#x8D26;&#x6237;&#x548C;&#x5BC6;&#x7801;&#x7B49;&#x4FE1;&#x606F;&#x3002;</li>
+</ul>
+<pre><code class="lang-python">EMAIL = <span class="hljs-string">&apos;&#x767B;&#x5F55;&#x8D26;&#x6237;&apos;</span>
+PASSWORD = <span class="hljs-string">&apos;&#x767B;&#x5F55;&#x5BC6;&#x7801;&apos;</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CrackGeetest</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+        self.url = <span class="hljs-string">&apos;https://account.geetest.com/login&apos;</span>
+        self.browser = webdriver.Chrome()
+        <span class="hljs-comment">#&#x8BBE;&#x7F6E;&#x663E;&#x793A;&#x7B49;&#x5F85;&#x65F6;&#x95F4;</span>
+        self.wait = WebDriverWait(self.browser, <span class="hljs-number">20</span>)
+        self.email = EMAIL
+        self.password = PASSWORD
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">crack</span><span class="hljs-params">()</span>:</span>
+        <span class="hljs-keyword">pass</span>
+
+<span class="hljs-comment"># &#x7A0B;&#x5E8F;&#x4E3B;&#x5165;&#x53E3;</span>
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+    crack = CrackGeetest()
+    crack.crack()
+</code></pre>
+<h4 id="&#x2461;-&#x6A21;&#x62DF;&#x767B;&#x5F55;&#x586B;&#x5199;&#xFF0C;&#x70B9;&#x5F00;&#x6ED1;&#x5757;&#x9A8C;&#x8BC1;">&#x2461; &#x6A21;&#x62DF;&#x767B;&#x5F55;&#x586B;&#x5199;&#xFF0C;&#x70B9;&#x5F00;&#x6ED1;&#x5757;&#x9A8C;&#x8BC1;</h4>
+<ul>
+<li>&#x5728;&#x5B9E;&#x4F8B;&#x5316;CrackGeetest&#x5BF9;&#x8C61;&#x540E;&#x8C03;&#x7528;crack()&#x65B9;&#x6CD5;&#x5F00;&#x59CB;&#x6A21;&#x62DF;&#x767B;&#x5F55;&#x9A8C;&#x8BC1;...</li>
+<li>&#x8C03;&#x7528;open()&#x65B9;&#x6CD5;&#xFF0C;&#x6253;&#x5F00;&#x767B;&#x5F55;&#x754C;&#x9762;&#xFF0C;&#x83B7;&#x53D6;&#x8D26;&#x6237;&#x548C;&#x5BC6;&#x7801;&#x8F93;&#x5165;&#x6846;&#x8282;&#x70B9;&#xFF0C;&#x5B8C;&#x6210;&#x8D26;&#x6237;&#x548C;&#x5BC6;&#x7801;&#x7684;&#x8F93;&#x5165;&#x3002;</li>
+<li>&#x8C03;&#x7528;get_geetest_button()&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x6ED1;&#x52A8;&#x9A8C;&#x8BC1;&#x6309;&#x94AE;&#xFF0C;&#x5E76;&#x70B9;&#x51FB;&#x3002;</li>
+</ul>
+<pre><code>class CrackGeetest():
+    #...
+
+    def get_geetest_button(self):
+        &apos;&apos;&apos; &#x83B7;&#x53D6;&#x521D;&#x59CB;&#x9A8C;&#x8BC1;&#x6309;&#x94AE;,return&#xFF1A;&#x6309;&#x94AE;&#x5BF9;&#x8C61; &apos;&apos;&apos;
+        button = self.wait.until(EC.element_to_be_clickable((By.CLASS_NAME, &apos;geetest_radar_tip&apos;)))
+        return button
+
+    def open(self):
+        &apos;&apos;&apos; &#x6253;&#x5F00;&#x7F51;&#x9875;&#x8F93;&#x5165;&#x7528;&#x6237;&#x540D;&#x5BC6;&#x7801;, return: None &apos;&apos;&apos;
+        self.browser.get(self.url)
+        email = self.wait.until(EC.presence_of_element_located((By.ID, &apos;email&apos;)))
+        password = self.wait.until(EC.presence_of_element_located((By.ID, &apos;password&apos;)))
+        email.send_keys(self.email)
+        password.send_keys(self.password)
+
+    def crack(self):
+        # &#x8F93;&#x5165;&#x7528;&#x6237;&#x540D;&#x5BC6;&#x7801;
+        self.open()
+        # &#x70B9;&#x51FB;&#x9A8C;&#x8BC1;&#x6309;&#x94AE;
+        button = self.get_geetest_button()
+        button.click()
+        #...
+    #...
+</code></pre><h4 id="&#x2462;-&#x83B7;&#x53D6;&#x5E76;&#x50A8;&#x5B58;&#x6709;&#x65E0;&#x7F3A;&#x53E3;&#x7684;&#x4E24;&#x5F20;&#x56FE;&#x7247;">&#x2462; &#x83B7;&#x53D6;&#x5E76;&#x50A8;&#x5B58;&#x6709;&#x65E0;&#x7F3A;&#x53E3;&#x7684;&#x4E24;&#x5F20;&#x56FE;&#x7247;</h4>
+<ul>
+<li>&#x9996;&#x5148;&#x83B7;&#x53D6;&#x65E0;&#x7F3A;&#x53E3;&#x7684;&#x9A8C;&#x8BC1;&#x56FE;&#x7247;&#xFF0C;&#x5E76;&#x4FDD;&#x5B58;&#x5230;&#x672C;&#x5730;</li>
+<li>&#x83B7;&#x53D6;&#x6ED1;&#x5757;&#x5BF9;&#x8C61;&#xFF0C;&#x5E76;&#x6267;&#x884C;&#x70B9;&#x51FB;&#xFF0C;&#x8BA9;&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x663E;&#x793A;&#x6709;&#x7F3A;&#x53E3;&#x56FE;&#x7247;</li>
+<li>&#x83B7;&#x53D6;&#x6709;&#x7F3A;&#x53E3;&#x7684;&#x9A8C;&#x8BC1;&#x56FE;&#x7247;&#xFF0C;&#x5E76;&#x4FDD;&#x5B58;&#x5230;&#x672C;&#x5730;</li>
+</ul>
+<pre><code class="lang-python">
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_position</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos; &#x83B7;&#x53D6;&#x9A8C;&#x8BC1;&#x7801;&#x4F4D;&#x7F6E;, return: &#x9A8C;&#x8BC1;&#x7801;&#x4F4D;&#x7F6E;(&#x5143;&#x7EC4;) &apos;&apos;&apos;</span>
+        img = self.wait.until(EC.presence_of_element_located((By.CLASS_NAME, <span class="hljs-string">&apos;geetest_canvas_img&apos;</span>)))
+        time.sleep(<span class="hljs-number">2</span>)
+        location = img.location
+        size = img.size
+        top,bottom,left,right = location[<span class="hljs-string">&apos;y&apos;</span>],location[<span class="hljs-string">&apos;y&apos;</span>]+size[<span class="hljs-string">&apos;height&apos;</span>],location[<span class="hljs-string">&apos;x&apos;</span>],location[<span class="hljs-string">&apos;x&apos;</span>]+size[<span class="hljs-string">&apos;width&apos;</span>]
+        <span class="hljs-keyword">return</span> (top, bottom, left, right)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_screenshot</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos; &#x83B7;&#x53D6;&#x7F51;&#x9875;&#x622A;&#x56FE;, return: &#x622A;&#x56FE;&#x5BF9;&#x8C61; &apos;&apos;&apos;</span>
+        <span class="hljs-comment">#&#x6D4F;&#x89C8;&#x5668;&#x622A;&#x5C4F;</span>
+        screenshot = self.browser.get_screenshot_as_png()
+        screenshot = Image.open(BytesIO(screenshot))
+        <span class="hljs-keyword">return</span> screenshot
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_geetest_image</span><span class="hljs-params">(self, name=<span class="hljs-string">&apos;captcha.png&apos;</span>)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos; &#x83B7;&#x53D6;&#x9A8C;&#x8BC1;&#x7801;&#x56FE;&#x7247;, return: &#x56FE;&#x7247;&#x5BF9;&#x8C61; &apos;&apos;&apos;</span>
+        top, bottom, left, right = self.get_position()
+        print(<span class="hljs-string">&apos;&#x9A8C;&#x8BC1;&#x7801;&#x4F4D;&#x7F6E;&apos;</span>, top, bottom, left, right)
+        screenshot = self.get_screenshot()
+        <span class="hljs-comment">#&#x4ECE;&#x7F51;&#x9875;&#x622A;&#x5C4F;&#x56FE;&#x7247;&#x4E2D;&#x88C1;&#x526A;&#x5904;&#x7406;&#x9A8C;&#x8BC1;&#x56FE;&#x7247;</span>
+        captcha = screenshot.crop((left, top, right, bottom))
+        captcha.save(name)
+        <span class="hljs-keyword">return</span> captcha
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_slider</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos; &#x83B7;&#x53D6;&#x6ED1;&#x5757;, return: &#x6ED1;&#x5757;&#x5BF9;&#x8C61; &apos;&apos;&apos;</span>
+        slider = self.wait.until(EC.element_to_be_clickable((By.CLASS_NAME, <span class="hljs-string">&apos;geetest_slider_button&apos;</span>)))
+        <span class="hljs-keyword">return</span> slider
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">crack</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-comment">#...</span>
+
+        <span class="hljs-comment"># &#x83B7;&#x53D6;&#x9A8C;&#x8BC1;&#x7801;&#x56FE;&#x7247;</span>
+        image1 = self.get_geetest_image(<span class="hljs-string">&apos;captcha1.png&apos;</span>)
+        <span class="hljs-comment"># &#x70B9;&#x6309;&#x547C;&#x51FA;&#x7F3A;&#x53E3;</span>
+        slider = self.get_slider()
+        slider.click()
+        <span class="hljs-comment"># &#x83B7;&#x53D6;&#x5E26;&#x7F3A;&#x53E3;&#x7684;&#x9A8C;&#x8BC1;&#x7801;&#x56FE;&#x7247;</span>
+        image2 = self.get_geetest_image(<span class="hljs-string">&apos;captcha2.png&apos;</span>)
+
+        <span class="hljs-comment">#...</span>
+</code></pre>
+<h4 id="&#x2463;-&#x83B7;&#x53D6;&#x7F3A;&#x53E3;&#x4F4D;&#x7F6E;">&#x2463; &#x83B7;&#x53D6;&#x7F3A;&#x53E3;&#x4F4D;&#x7F6E;</h4>
+<ul>
+<li>&#x5BF9;&#x6BD4;&#x4E24;&#x5F20;&#x56FE;&#x7247;&#x7684;&#x6240;&#x6709;RBG&#x50CF;&#x7D20;&#x70B9;&#xFF0C;&#x5F97;&#x5230;&#x4E0D;&#x4E00;&#x6837;&#x50CF;&#x7D20;&#x70B9;&#x7684;x&#x503C;&#xFF0C;&#x5373;&#x8981;&#x79FB;&#x52A8;&#x7684;&#x8DDD;&#x79BB;</li>
+</ul>
+<pre><code class="lang-python">
+BORDER = <span class="hljs-number">6</span>
+INIT_LEFT = <span class="hljs-number">60</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CrackGeetest</span><span class="hljs-params">()</span>:</span>  
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_gap</span><span class="hljs-params">(self, image1, image2)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos; &#x83B7;&#x53D6;&#x7F3A;&#x53E3;&#x504F;&#x79FB;&#x91CF;, &#x53C2;&#x6570;&#xFF1A;image1&#x4E0D;&#x5E26;&#x7F3A;&#x53E3;&#x56FE;&#x7247;&#x3001;image2&#x5E26;&#x7F3A;&#x53E3;&#x56FE;&#x7247;&#x3002;&#x8FD4;&#x56DE;&#x504F;&#x79FB;&#x91CF; &apos;&apos;&apos;</span>
+        left = <span class="hljs-number">65</span>
+        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(left, image1.size[<span class="hljs-number">0</span>]):
+            <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(image1.size[<span class="hljs-number">1</span>]):
+                <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> self.is_pixel_equal(image1, image2, i, j):
+                    left = i
+                    <span class="hljs-keyword">return</span> left
+        <span class="hljs-keyword">return</span> left
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_pixel_equal</span><span class="hljs-params">(self, image1, image2, x, y)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;
+        &#x5224;&#x65AD;&#x4E24;&#x4E2A;&#x50CF;&#x7D20;&#x662F;&#x5426;&#x76F8;&#x540C;
+        :param image1: &#x56FE;&#x7247;1
+        :param image2: &#x56FE;&#x7247;2
+        :param x: &#x4F4D;&#x7F6E;x
+        :param y: &#x4F4D;&#x7F6E;y
+        :return: &#x50CF;&#x7D20;&#x662F;&#x5426;&#x76F8;&#x540C;
+        &apos;&apos;&apos;</span>
+        <span class="hljs-comment"># &#x53D6;&#x4E24;&#x4E2A;&#x56FE;&#x7247;&#x7684;&#x50CF;&#x7D20;&#x70B9;&#xFF08;R&#x3001;G&#x3001;B&#xFF09;</span>
+        pixel1 = image1.load()[x, y]
+        pixel2 = image2.load()[x, y]
+        threshold = <span class="hljs-number">60</span>
+        <span class="hljs-keyword">if</span> abs(pixel1[<span class="hljs-number">0</span>]-pixel2[<span class="hljs-number">0</span>])&lt;threshold <span class="hljs-keyword">and</span> abs(pixel1[<span class="hljs-number">1</span>]-pixel2[<span class="hljs-number">1</span>])&lt;threshold <span class="hljs-keyword">and</span> abs(pixel1[<span class="hljs-number">2</span>]-pixel2[<span class="hljs-number">2</span>])&lt;threshold:
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">True</span>
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">False</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">crack</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-comment">#...</span>
+
+        <span class="hljs-comment"># &#x83B7;&#x53D6;&#x7F3A;&#x53E3;&#x4F4D;&#x7F6E;</span>
+        gap = self.get_gap(image1, image2)
+        print(<span class="hljs-string">&apos;&#x7F3A;&#x53E3;&#x4F4D;&#x7F6E;&apos;</span>, gap)
+        <span class="hljs-comment"># &#x51CF;&#x53BB;&#x7F3A;&#x53E3;&#x4F4D;&#x79FB;</span>
+        gap -= BORDER
+</code></pre>
+<h4 id="&#x2464;-&#x83B7;&#x53D6;&#x79FB;&#x52A8;&#x8F68;&#x8FF9;">&#x2464; &#x83B7;&#x53D6;&#x79FB;&#x52A8;&#x8F68;&#x8FF9;</h4>
+<ul>
+<li>&#x6A21;&#x62DF;&#x4EBA;&#x7684;&#x884C;&#x4E3A;&#x4E60;&#x60EF;&#xFF08;&#x5148;&#x5300;&#x52A0;&#x901F;&#x62D6;&#x52A8;&#x540E;&#x5300;&#x51CF;&#x901F;&#x62D6;&#x52A8;&#xFF09;&#xFF0C;&#x628A;&#x9700;&#x8981;&#x62D6;&#x52A8;&#x7684;&#x603B;&#x8DDD;&#x79BB;&#x5206;&#x6210;&#x4E00;&#x6BB5;&#x4E00;&#x6BB5;&#x5C0F;&#x7684;&#x8F68;&#x8FF9;</li>
+</ul>
+<pre><code class="lang-python">
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_track</span><span class="hljs-params">(self, distance)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;
+        &#x6839;&#x636E;&#x504F;&#x79FB;&#x91CF;&#x83B7;&#x53D6;&#x79FB;&#x52A8;&#x8F68;&#x8FF9;
+        :param distance: &#x504F;&#x79FB;&#x91CF;
+        :return: &#x79FB;&#x52A8;&#x8F68;&#x8FF9;
+        &apos;&apos;&apos;</span>
+        <span class="hljs-comment"># &#x79FB;&#x52A8;&#x8F68;&#x8FF9;</span>
+        track = []
+        <span class="hljs-comment"># &#x5F53;&#x524D;&#x4F4D;&#x79FB;</span>
+        current = <span class="hljs-number">0</span>
+        <span class="hljs-comment"># &#x51CF;&#x901F;&#x9608;&#x503C;</span>
+        mid = distance * <span class="hljs-number">4</span> / <span class="hljs-number">5</span>
+        <span class="hljs-comment"># &#x8BA1;&#x7B97;&#x95F4;&#x9694;</span>
+        t = <span class="hljs-number">0.2</span>
+        <span class="hljs-comment"># &#x521D;&#x901F;&#x5EA6;</span>
+        v = <span class="hljs-number">0</span>
+
+        <span class="hljs-keyword">while</span> current &lt; distance:
+            <span class="hljs-keyword">if</span> current &lt; mid:
+                <span class="hljs-comment"># &#x52A0;&#x901F;&#x5EA6;&#x4E3A;&#x6B63;2</span>
+                a = <span class="hljs-number">2</span>
+            <span class="hljs-keyword">else</span>:
+                <span class="hljs-comment"># &#x52A0;&#x901F;&#x5EA6;&#x4E3A;&#x8D1F;3</span>
+                a = <span class="hljs-number">-3</span>
+            <span class="hljs-comment"># &#x521D;&#x901F;&#x5EA6;v0</span>
+            v0 = v
+            <span class="hljs-comment"># &#x5F53;&#x524D;&#x901F;&#x5EA6;v = v0 + at</span>
+            v = v0 + a * t
+            <span class="hljs-comment"># &#x79FB;&#x52A8;&#x8DDD;&#x79BB;x = v0t + 1/2 * a * t^2</span>
+            move = v0 * t + <span class="hljs-number">1</span> / <span class="hljs-number">2</span> * a * t * t
+            <span class="hljs-comment"># &#x5F53;&#x524D;&#x4F4D;&#x79FB;</span>
+            current += move
+            <span class="hljs-comment"># &#x52A0;&#x5165;&#x8F68;&#x8FF9;</span>
+            track.append(round(move))
+        <span class="hljs-keyword">return</span> track
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">crack</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-comment">#...</span>
+
+        <span class="hljs-comment"># &#x83B7;&#x53D6;&#x79FB;&#x52A8;&#x8F68;&#x8FF9;</span>
+        track = self.get_track(gap)
+        print(<span class="hljs-string">&apos;&#x6ED1;&#x52A8;&#x8F68;&#x8FF9;&apos;</span>, track)
+</code></pre>
+<h4 id="&#x2465;-&#x6309;&#x7167;&#x8F68;&#x8FF9;&#x62D6;&#x52A8;&#xFF0C;&#x5B8C;&#x5168;&#x9A8C;&#x8BC1;">&#x2465; &#x6309;&#x7167;&#x8F68;&#x8FF9;&#x62D6;&#x52A8;&#xFF0C;&#x5B8C;&#x5168;&#x9A8C;&#x8BC1;</h4>
+<pre><code class="lang-python">
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move_to_gap</span><span class="hljs-params">(self, slider, track)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;
+        &#x62D6;&#x52A8;&#x6ED1;&#x5757;&#x5230;&#x7F3A;&#x53E3;&#x5904;
+        :param slider: &#x6ED1;&#x5757;
+        :param track: &#x8F68;&#x8FF9;
+        :return: 
+        &apos;&apos;&apos;</span>
+        ActionChains(self.browser).click_and_hold(slider).perform()
+        <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> track:
+            ActionChains(self.browser).move_by_offset(xoffset=x, yoffset=<span class="hljs-number">0</span>).perform()
+        time.sleep(<span class="hljs-number">0.5</span>)
+        ActionChains(self.browser).release().perform()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">crack</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-comment">#...</span>
+
+        <span class="hljs-comment"># &#x62D6;&#x52A8;&#x6ED1;&#x5757;</span>
+        self.move_to_gap(slider, track)
+
+        success = self.wait.until(
+            EC.text_to_be_present_in_element((By.CLASS_NAME, <span class="hljs-string">&apos;geetest_success_radar_tip_content&apos;</span>), <span class="hljs-string">&apos;&#x9A8C;&#x8BC1;&#x6210;&#x529F;&apos;</span>))
+        print(success)
+</code></pre>
+<h4 id="&#x2466;-&#x5B8C;&#x6210;&#x767B;&#x5F55;">&#x2466; &#x5B8C;&#x6210;&#x767B;&#x5F55;</h4>
+<pre><code class="lang-python">
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">login</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos; &#x6267;&#x884C;&#x767B;&#x5F55; return: None &apos;&apos;&apos;</span>
+        submit = self.wait.until(EC.element_to_be_clickable((By.CLASS_NAME, <span class="hljs-string">&apos;login-btn&apos;</span>)))
+        submit.click()
+        time.sleep(<span class="hljs-number">10</span>)
+        print(<span class="hljs-string">&apos;&#x767B;&#x5F55;&#x6210;&#x529F;&apos;</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">crack</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-comment">#...</span>
+
+        <span class="hljs-comment"># &#x5931;&#x8D25;&#x540E;&#x91CD;&#x8BD5;</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> success:
+            self.crack()
+        <span class="hljs-keyword">else</span>:
+            self.login()
+</code></pre>
+<h3 id="223-&#x5B8C;&#x6574;&#x4EE3;&#x7801;&#xFF1A;">22.3 &#x5B8C;&#x6574;&#x4EE3;&#x7801;&#xFF1A;</h3>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> time
+<span class="hljs-keyword">from</span> io <span class="hljs-keyword">import</span> BytesIO
+<span class="hljs-keyword">from</span> PIL <span class="hljs-keyword">import</span> Image
+<span class="hljs-keyword">from</span> selenium <span class="hljs-keyword">import</span> webdriver
+<span class="hljs-keyword">from</span> selenium.webdriver <span class="hljs-keyword">import</span> ActionChains
+<span class="hljs-keyword">from</span> selenium.webdriver.common.by <span class="hljs-keyword">import</span> By
+<span class="hljs-keyword">from</span> selenium.webdriver.support.ui <span class="hljs-keyword">import</span> WebDriverWait
+<span class="hljs-keyword">from</span> selenium.webdriver.support <span class="hljs-keyword">import</span> expected_conditions <span class="hljs-keyword">as</span> EC
+
+EMAIL = <span class="hljs-string">&apos;122794105@qq.com&apos;</span>
+PASSWORD = <span class="hljs-string">&apos;python123&apos;</span>
+BORDER = <span class="hljs-number">6</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CrackGeetest</span><span class="hljs-params">()</span>:</span>
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span>
+        self.url = <span class="hljs-string">&apos;https://account.geetest.com/login&apos;</span>
+        self.browser = webdriver.Chrome()
+        <span class="hljs-comment">#&#x8BBE;&#x7F6E;&#x663E;&#x793A;&#x7B49;&#x5F85;&#x65F6;&#x95F4;</span>
+        self.wait = WebDriverWait(self.browser, <span class="hljs-number">20</span>)
+        self.email = EMAIL
+        self.password = PASSWORD
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__del__</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-comment">#self.browser.close()</span>
+        <span class="hljs-keyword">pass</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_geetest_button</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos; &#x83B7;&#x53D6;&#x521D;&#x59CB;&#x9A8C;&#x8BC1;&#x6309;&#x94AE;,return&#xFF1A;&#x6309;&#x94AE;&#x5BF9;&#x8C61; &apos;&apos;&apos;</span>
+        button = self.wait.until(EC.element_to_be_clickable((By.CLASS_NAME, <span class="hljs-string">&apos;geetest_radar_tip&apos;</span>)))
+        <span class="hljs-keyword">return</span> button
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_position</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos; &#x83B7;&#x53D6;&#x9A8C;&#x8BC1;&#x7801;&#x4F4D;&#x7F6E;, return: &#x9A8C;&#x8BC1;&#x7801;&#x4F4D;&#x7F6E;(&#x5143;&#x7EC4;) &apos;&apos;&apos;</span>
+        img = self.wait.until(EC.presence_of_element_located((By.CLASS_NAME, <span class="hljs-string">&apos;geetest_canvas_img&apos;</span>)))
+        time.sleep(<span class="hljs-number">2</span>)
+        location = img.location
+        size = img.size
+        top,bottom,left,right = location[<span class="hljs-string">&apos;y&apos;</span>],location[<span class="hljs-string">&apos;y&apos;</span>]+size[<span class="hljs-string">&apos;height&apos;</span>],location[<span class="hljs-string">&apos;x&apos;</span>],location[<span class="hljs-string">&apos;x&apos;</span>]+size[<span class="hljs-string">&apos;width&apos;</span>]
+        <span class="hljs-keyword">return</span> (top, bottom, left, right)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_screenshot</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos; &#x83B7;&#x53D6;&#x7F51;&#x9875;&#x622A;&#x56FE;, return: &#x622A;&#x56FE;&#x5BF9;&#x8C61; &apos;&apos;&apos;</span>
+        <span class="hljs-comment">#&#x6D4F;&#x89C8;&#x5668;&#x622A;&#x5C4F;</span>
+        screenshot = self.browser.get_screenshot_as_png()
+        screenshot = Image.open(BytesIO(screenshot))
+        <span class="hljs-keyword">return</span> screenshot
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_slider</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos; &#x83B7;&#x53D6;&#x6ED1;&#x5757;, return: &#x6ED1;&#x5757;&#x5BF9;&#x8C61; &apos;&apos;&apos;</span>
+        slider = self.wait.until(EC.element_to_be_clickable((By.CLASS_NAME, <span class="hljs-string">&apos;geetest_slider_button&apos;</span>)))
+        <span class="hljs-keyword">return</span> slider
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_geetest_image</span><span class="hljs-params">(self, name=<span class="hljs-string">&apos;captcha.png&apos;</span>)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos; &#x83B7;&#x53D6;&#x9A8C;&#x8BC1;&#x7801;&#x56FE;&#x7247;, return: &#x56FE;&#x7247;&#x5BF9;&#x8C61; &apos;&apos;&apos;</span>
+        top, bottom, left, right = self.get_position()
+        print(<span class="hljs-string">&apos;&#x9A8C;&#x8BC1;&#x7801;&#x4F4D;&#x7F6E;&apos;</span>, top, bottom, left, right)
+        screenshot = self.get_screenshot()
+        <span class="hljs-comment">#&#x4ECE;&#x7F51;&#x9875;&#x622A;&#x5C4F;&#x56FE;&#x7247;&#x4E2D;&#x88C1;&#x526A;&#x5904;&#x7406;&#x9A8C;&#x8BC1;&#x56FE;&#x7247;</span>
+        captcha = screenshot.crop((left, top, right, bottom))
+        captcha.save(name)
+        <span class="hljs-keyword">return</span> captcha
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">open</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos; &#x6253;&#x5F00;&#x7F51;&#x9875;&#x8F93;&#x5165;&#x7528;&#x6237;&#x540D;&#x5BC6;&#x7801;, return: None &apos;&apos;&apos;</span>
+        self.browser.get(self.url)
+        email = self.wait.until(EC.presence_of_element_located((By.ID, <span class="hljs-string">&apos;email&apos;</span>)))
+        password = self.wait.until(EC.presence_of_element_located((By.ID, <span class="hljs-string">&apos;password&apos;</span>)))
+        email.send_keys(self.email)
+        password.send_keys(self.password)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_gap</span><span class="hljs-params">(self, image1, image2)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos; &#x83B7;&#x53D6;&#x7F3A;&#x53E3;&#x504F;&#x79FB;&#x91CF;, &#x53C2;&#x6570;&#xFF1A;image1&#x4E0D;&#x5E26;&#x7F3A;&#x53E3;&#x56FE;&#x7247;&#x3001;image2&#x5E26;&#x7F3A;&#x53E3;&#x56FE;&#x7247;&#x3002;&#x8FD4;&#x56DE;&#x504F;&#x79FB;&#x91CF; &apos;&apos;&apos;</span>
+        left = <span class="hljs-number">65</span>
+        <span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> range(left, image1.size[<span class="hljs-number">0</span>]):
+            <span class="hljs-keyword">for</span> j <span class="hljs-keyword">in</span> range(image1.size[<span class="hljs-number">1</span>]):
+                <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> self.is_pixel_equal(image1, image2, i, j):
+                    left = i
+                    <span class="hljs-keyword">return</span> left
+        <span class="hljs-keyword">return</span> left
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">is_pixel_equal</span><span class="hljs-params">(self, image1, image2, x, y)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;
+        &#x5224;&#x65AD;&#x4E24;&#x4E2A;&#x50CF;&#x7D20;&#x662F;&#x5426;&#x76F8;&#x540C;
+        :param image1: &#x56FE;&#x7247;1
+        :param image2: &#x56FE;&#x7247;2
+        :param x: &#x4F4D;&#x7F6E;x
+        :param y: &#x4F4D;&#x7F6E;y
+        :return: &#x50CF;&#x7D20;&#x662F;&#x5426;&#x76F8;&#x540C;
+        &apos;&apos;&apos;</span>
+        <span class="hljs-comment"># &#x53D6;&#x4E24;&#x4E2A;&#x56FE;&#x7247;&#x7684;&#x50CF;&#x7D20;&#x70B9;&#xFF08;R&#x3001;G&#x3001;B&#xFF09;</span>
+        pixel1 = image1.load()[x, y]
+        pixel2 = image2.load()[x, y]
+        threshold = <span class="hljs-number">60</span>
+        <span class="hljs-keyword">if</span> abs(pixel1[<span class="hljs-number">0</span>]-pixel2[<span class="hljs-number">0</span>])&lt;threshold <span class="hljs-keyword">and</span> abs(pixel1[<span class="hljs-number">1</span>]-pixel2[<span class="hljs-number">1</span>])&lt;threshold <span class="hljs-keyword">and</span> abs(pixel1[<span class="hljs-number">2</span>]-pixel2[<span class="hljs-number">2</span>])&lt;threshold:
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">True</span>
+        <span class="hljs-keyword">else</span>:
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">False</span>
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">get_track</span><span class="hljs-params">(self, distance)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;
+        &#x6839;&#x636E;&#x504F;&#x79FB;&#x91CF;&#x83B7;&#x53D6;&#x79FB;&#x52A8;&#x8F68;&#x8FF9;
+        :param distance: &#x504F;&#x79FB;&#x91CF;
+        :return: &#x79FB;&#x52A8;&#x8F68;&#x8FF9;
+        &apos;&apos;&apos;</span>
+        <span class="hljs-comment"># &#x79FB;&#x52A8;&#x8F68;&#x8FF9;</span>
+        track = []
+        <span class="hljs-comment"># &#x5F53;&#x524D;&#x4F4D;&#x79FB;</span>
+        current = <span class="hljs-number">0</span>
+        <span class="hljs-comment"># &#x51CF;&#x901F;&#x9608;&#x503C;</span>
+        mid = distance * <span class="hljs-number">4</span> / <span class="hljs-number">5</span>
+        <span class="hljs-comment"># &#x8BA1;&#x7B97;&#x95F4;&#x9694;</span>
+        t = <span class="hljs-number">0.2</span>
+        <span class="hljs-comment"># &#x521D;&#x901F;&#x5EA6;</span>
+        v = <span class="hljs-number">0</span>
+
+        <span class="hljs-keyword">while</span> current &lt; distance:
+            <span class="hljs-keyword">if</span> current &lt; mid:
+                <span class="hljs-comment"># &#x52A0;&#x901F;&#x5EA6;&#x4E3A;&#x6B63;2</span>
+                a = <span class="hljs-number">2</span>
+            <span class="hljs-keyword">else</span>:
+                <span class="hljs-comment"># &#x52A0;&#x901F;&#x5EA6;&#x4E3A;&#x8D1F;3</span>
+                a = <span class="hljs-number">-3</span>
+            <span class="hljs-comment"># &#x521D;&#x901F;&#x5EA6;v0</span>
+            v0 = v
+            <span class="hljs-comment"># &#x5F53;&#x524D;&#x901F;&#x5EA6;v = v0 + at</span>
+            v = v0 + a * t
+            <span class="hljs-comment"># &#x79FB;&#x52A8;&#x8DDD;&#x79BB;x = v0t + 1/2 * a * t^2</span>
+            move = v0 * t + <span class="hljs-number">1</span> / <span class="hljs-number">2</span> * a * t * t
+            <span class="hljs-comment"># &#x5F53;&#x524D;&#x4F4D;&#x79FB;</span>
+            current += move
+            <span class="hljs-comment"># &#x52A0;&#x5165;&#x8F68;&#x8FF9;</span>
+            track.append(round(move))
+        <span class="hljs-keyword">return</span> track
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">move_to_gap</span><span class="hljs-params">(self, slider, track)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos;
+        &#x62D6;&#x52A8;&#x6ED1;&#x5757;&#x5230;&#x7F3A;&#x53E3;&#x5904;
+        :param slider: &#x6ED1;&#x5757;
+        :param track: &#x8F68;&#x8FF9;
+        :return: 
+        &apos;&apos;&apos;</span>
+        ActionChains(self.browser).click_and_hold(slider).perform()
+        <span class="hljs-keyword">for</span> x <span class="hljs-keyword">in</span> track:
+            ActionChains(self.browser).move_by_offset(xoffset=x, yoffset=<span class="hljs-number">0</span>).perform()
+        time.sleep(<span class="hljs-number">0.5</span>)
+        ActionChains(self.browser).release().perform()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">login</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-string">&apos;&apos;&apos; &#x6267;&#x884C;&#x767B;&#x5F55; return: None &apos;&apos;&apos;</span>
+        submit = self.wait.until(EC.element_to_be_clickable((By.CLASS_NAME, <span class="hljs-string">&apos;login-btn&apos;</span>)))
+        submit.click()
+        time.sleep(<span class="hljs-number">10</span>)
+        print(<span class="hljs-string">&apos;&#x767B;&#x5F55;&#x6210;&#x529F;&apos;</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">crack</span><span class="hljs-params">(self)</span>:</span>
+        <span class="hljs-comment"># &#x8F93;&#x5165;&#x7528;&#x6237;&#x540D;&#x5BC6;&#x7801;</span>
+        self.open()
+        <span class="hljs-comment"># &#x70B9;&#x51FB;&#x9A8C;&#x8BC1;&#x6309;&#x94AE;</span>
+        button = self.get_geetest_button()
+        button.click()
+        <span class="hljs-comment"># &#x83B7;&#x53D6;&#x9A8C;&#x8BC1;&#x7801;&#x56FE;&#x7247;</span>
+        image1 = self.get_geetest_image(<span class="hljs-string">&apos;captcha1.png&apos;</span>)
+        <span class="hljs-comment"># &#x70B9;&#x6309;&#x547C;&#x51FA;&#x7F3A;&#x53E3;</span>
+        slider = self.get_slider()
+        slider.click()
+        <span class="hljs-comment"># &#x83B7;&#x53D6;&#x5E26;&#x7F3A;&#x53E3;&#x7684;&#x9A8C;&#x8BC1;&#x7801;&#x56FE;&#x7247;</span>
+        image2 = self.get_geetest_image(<span class="hljs-string">&apos;captcha2.png&apos;</span>)
+        <span class="hljs-comment"># &#x83B7;&#x53D6;&#x7F3A;&#x53E3;&#x4F4D;&#x7F6E;</span>
+        gap = self.get_gap(image1, image2)
+        print(<span class="hljs-string">&apos;&#x7F3A;&#x53E3;&#x4F4D;&#x7F6E;&apos;</span>, gap)
+        <span class="hljs-comment"># &#x51CF;&#x53BB;&#x7F3A;&#x53E3;&#x4F4D;&#x79FB;</span>
+        gap -= BORDER
+        <span class="hljs-comment"># &#x83B7;&#x53D6;&#x79FB;&#x52A8;&#x8F68;&#x8FF9;</span>
+        track = self.get_track(gap)
+        print(<span class="hljs-string">&apos;&#x6ED1;&#x52A8;&#x8F68;&#x8FF9;&apos;</span>, track)
+        <span class="hljs-comment"># &#x62D6;&#x52A8;&#x6ED1;&#x5757;</span>
+        self.move_to_gap(slider, track)
+
+        success = self.wait.until(
+            EC.text_to_be_present_in_element((By.CLASS_NAME, <span class="hljs-string">&apos;geetest_success_radar_tip_content&apos;</span>), <span class="hljs-string">&apos;&#x9A8C;&#x8BC1;&#x6210;&#x529F;&apos;</span>))
+        print(success)
+
+        <span class="hljs-comment"># &#x5931;&#x8D25;&#x540E;&#x91CD;&#x8BD5;</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-keyword">not</span> success:
+            self.crack()
+        <span class="hljs-keyword">else</span>:
+            self.login()
+
+<span class="hljs-comment"># &#x7A0B;&#x5E8F;&#x4E3B;&#x5165;&#x53E3;</span>
+<span class="hljs-keyword">if</span> __name__ == <span class="hljs-string">&apos;__main__&apos;</span>:
+    crack = CrackGeetest()
+    crack.crack()
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="4.html" class="navigation navigation-prev " aria-label="Previous page: 21. 从API爬取天气预报数据">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="6.html" class="navigation navigation-next " aria-label="Next page: 23. 爬虫项目需求分析">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"22. 滑动验证码的识别","level":"1.5.5","depth":2,"next":{"title":"23. 爬虫项目需求分析","level":"1.5.6","depth":2,"path":"week03/6.md","ref":"week03/6.md","articles":[]},"previous":{"title":"21. 从API爬取天气预报数据","level":"1.5.4","depth":2,"path":"week03/4.md","ref":"week03/4.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"week03/5.md","mtime":"2018-06-14T07:34:21.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-06-12T06:55:54.323Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
