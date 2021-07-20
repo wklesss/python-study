@@ -1,6 +1,7 @@
 # python-study
 ## 学习python
 
+0. code
 1. 廖雪峰python
 2. 小甲鱼python
 3. python编程-从入门到实践
