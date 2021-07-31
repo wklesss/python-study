@@ -18,5 +18,8 @@ str3 = '   jackfrued@126.com   '
 print(str3)
 print(str3.strip())
 
+# 格式化输出字符
 a, b = 5, 10
 print('%d * %d = %d' % (a, b, a * b))
+print('{0} * {1} = {2}'.format(a, b, a * b))
+print(f'{a} * {b} = {a * b}')
